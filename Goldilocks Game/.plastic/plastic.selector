@@ -1,0 +1,3 @@
+rep "Goldilocks Game@jaewoon08@cloud"
+  path "/"
+    smartbranch "/main"

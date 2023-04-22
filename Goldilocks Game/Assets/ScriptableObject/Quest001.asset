@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Quest001
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDataScriptableObject_Resource
+  Thumbnail: {fileID: 0}
+  Check_Clear_Before_End: 0
+  Quest_Name: 
+  Quest_Start_Contents: 
+  Quest_Clear_Contents: 
+  Quest_Fail_Contents: 
+  TurnCount: 0
+  Next_Quest_If_Clear: {fileID: 0}
+  Next_Quest_If_False: {fileID: 0}
+  Repay_Type: 
+  Repay_Value: 
+  Repay_Multiply: []
+  Penalty_Type: 
+  Penalty_Value: 
+  Penalty_Multiply: []
+  condition0: 0
+  CD: []

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Quest000
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDataScriptableObject_Resource
+  Thumbnail: {fileID: 21300000, guid: 05592ac8681fdbc48aff6a540f3ba952, type: 3}
+  Check_Clear_Before_End: 1
+  Quest_Name: "\uAC70\uC8FC\uC9C0 \uAC74\uC124\uD558\uAE30"
+  Quest_Start_Contents: "\uB3C4\uC2DC \uAC74\uC124\uC758 \uCCAB \uB2E8\uACC4\uB294
+    \uC9D1\uC744 \uC9D3\uB294 \uAC83\uC785\uB2C8\uB2E4. \uC88C\uCE21 \uD558\uB2E8\uC758
+    \uD1B1\uB2C8\uBC14\uD034 \uBC84\uD2BC\uC744 \uB20C\uB7EC \uAE30\uC220\uCC3D\uC744
+    \uC5F0 \uB4A4 \uC784\uC2DC \uAC70\uC8FC\uC9C0\uB97C \uD574\uAE08\uD558\uACE0 \uC784\uC2DC
+    \uAC70\uC8FC\uC9C0\uB97C 7\uCC44 \uAC74\uC124\uD55C \uB4A4 \uC791\uB3D9\uC2DC\uD0A4\uC2ED\uC2DC\uC624."
+  Quest_Clear_Contents: "\uBAA8\uB4E0 \uC8FC\uBBFC\uB4E4\uC5D0\uAC8C \uCDA9\uBD84\uD55C
+    \uAC70\uC8FC\uC9C0\uAC00 \uB3CC\uC544\uAC00\uC9C0 \uC54A\uC73C\uBA74 \uC0AC\uB78C\uB4E4\uC740
+    \uC27D\uAC8C \uC9C8\uBCD1\uC5D0 \uAC78\uB9AC\uBA70 \uBD88\uB9CC\uC744 \uAC00\uC9C8
+    \uAC83\uC785\uB2C8\uB2E4. \uC870\uC2EC\uD558\uC2ED\uC2DC\uC624."
+  Quest_Fail_Contents: "\uC774 \uBA54\uC2DC\uC9C0\uAC00 \uB5B4\uB2E4\uBA74 \uC2EC\uAC01\uD55C
+    \uC5D0\uB7EC\uAC00 \uBC1C\uC0DD\uD588\uB2E4\uB294 \uB73B\uC785\uB2C8\uB2E4. \uC885\uB8CC
+    \uD6C4 \uC7AC\uC2DC\uC791\uC744 \uAD8C\uC7A5\uD569\uB2C8\uB2E4."
+  TurnCount: 10
+  Next_Quest_If_Clear: {fileID: 11400000, guid: 471663b991a3533458b2ea0b4152ce6b,
+    type: 2}
+  Next_Quest_If_False: {fileID: 11400000, guid: 471663b991a3533458b2ea0b4152ce6b,
+    type: 2}
+  Repay_Type: 1e0000001f000000
+  Repay_Value: 1400000002000000
+  Repay_Multiply: []
+  Penalty_Type: 1e0000001f000000
+  Penalty_Value: 9cffffff9cffffff
+  Penalty_Multiply: []
+  condition0: 01
+  CD:
+  - Condition_Contents: 
+    Ac: 0
+    Cc: 0
+    BC: 4
+    Building_Type: 0
+    Building_Version: 0
+    Condition_Type: 0
+    Condition_Value: 10

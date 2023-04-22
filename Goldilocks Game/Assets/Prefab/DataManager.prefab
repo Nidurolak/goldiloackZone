@@ -1,0 +1,4836 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6876671279813272301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6876671279813272299}
+  - component: {fileID: 6876671279813272300}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6876671279813272299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876671279813272301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7630406, y: -0.6429679, z: -0.008582974}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6876671279813272300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876671279813272301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1ea6dfd0e806242b5fb82b970d18e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Original: {fileID: 6876671279813272301}
+  difficulty: 1
+  stage_Escalation: 0
+  TurnEnd_Explorer:
+    m_PersistentCalls:
+      m_Calls: []
+  TurnEnd_Quest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Event_Quest_Resource
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Quest_End_Working
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Event_Quest_Clear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsReset: 0
+  OverCrowding: 0
+  IsCinematic: 0
+  IsOver: 0
+  Ticket: 0
+  medicalState: 0
+  WillState: 0
+  ComplaintState: 0
+  HopeState: 0
+  DM: {fileID: 6876671279813272300}
+  RM: {fileID: 0}
+  TM: {fileID: 0}
+  TTM: {fileID: 0}
+  MS: {fileID: 0}
+  SM: {fileID: 0}
+  EXM: {fileID: 0}
+  EM: {fileID: 0}
+  SPM: {fileID: 0}
+  QM: {fileID: 0}
+  AP: {fileID: 0}
+  AC: {fileID: 0}
+  Over: {fileID: 0}
+  Overobj: {fileID: 0}
+  SteelWhale: {fileID: 7935801017658867636, guid: ecfb95d98bf6e7d499e2477021555b39,
+    type: 3}
+  Resource_Sprites_Logo_NonBackGround:
+  - {fileID: 21300000, guid: 0c9b03d84cb8783429a6c73aa021a0f2, type: 3}
+  - {fileID: 21300000, guid: 36b413bcc1f8c5645aefaa90a692d694, type: 3}
+  - {fileID: 21300000, guid: 3342f631d8a369b45960959e830f8b57, type: 3}
+  - {fileID: 21300000, guid: 45537f80833c104408165a79f429a726, type: 3}
+  - {fileID: 21300000, guid: 8db55ef5641e22444bcaf4d2391bea3a, type: 3}
+  - {fileID: 21300000, guid: b5f3196ff94516646b52823cf12352b4, type: 3}
+  - {fileID: 21300000, guid: d340db4e055c64246ab92dd8eef037a0, type: 3}
+  - {fileID: 21300000, guid: 72d1620b7f942ed4db9d36801a2c8fc5, type: 3}
+  - {fileID: 21300000, guid: 6a2c03623675fde4e9dd3a89b82f5936, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 3890b19c58fc0464ea15ddb37c72a50f, type: 3}
+  - {fileID: 21300000, guid: 687ce0633c18aa04191cbcc6dfe0afae, type: 3}
+  - {fileID: 21300000, guid: 23799ea04740d544eae618931cf3c678, type: 3}
+  - {fileID: 21300000, guid: 06df4c32f3f48ad40a08f78766f41cd0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Resource_Sprites_Logo_BackGround:
+  - {fileID: 21300000, guid: e9ad601215ca63d42ba1c4ff0614d4db, type: 3}
+  - {fileID: 21300000, guid: 2b665adbbf28b7c4d861017ba2ca4355, type: 3}
+  - {fileID: 21300000, guid: aad7569a8e0c580418d878f1cc977027, type: 3}
+  - {fileID: 21300000, guid: 7caef36d6c87bee4ba2c5679612ea697, type: 3}
+  - {fileID: 21300000, guid: 4399c61c89ed4cc45b4ac488241e95f0, type: 3}
+  - {fileID: 21300000, guid: c5465433740c45a4fb0eebe3c357509b, type: 3}
+  - {fileID: 21300000, guid: 626e3fa9cff6db04a94dd0925f785aaa, type: 3}
+  - {fileID: 21300000, guid: e3c9dfa15df1c7c47852bba525906a28, type: 3}
+  - {fileID: 21300000, guid: 5152992d375f23049966a3754e9dd35d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 8bf697edfd429754797c41c2b4f744e6, type: 3}
+  - {fileID: 21300000, guid: c55774c33a6232e4c975b8e14c7ce73c, type: 3}
+  - {fileID: 21300000, guid: aa4f6b4dba527634ab1dd93896a396b9, type: 3}
+  - {fileID: 21300000, guid: 93d356b2560200846aefd42751cb6416, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  FoundZone_List: []
+  FloorTile_Count: 
+  FloorTile_List: []
+  FloorTile_List_MakingResource: []
+  OnEableFloorTiles: []
+  All_Resource_List: 3200000032000000320000003200000032000000960000006400000000000000d0070000000000000000000000000000f4010000f4010000f4010000f401000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a0000001e0000001400000064000000640000006400000000000000000000008c0000000a0000000f00000000000000000000000a00000000000000000000000000000001000000050000000300000000000000000000000000000000000000000000008c0000001200000008000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  All_Resource_PerTurn_List_Total: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  Tech_Upkeep_Discharge_Magnification_List: 0
+  Tech_Upkeep_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Tech_Upkeep_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Rule_Upkeep_Discharge_Magnification_List: 0
+  Rule_Upkeep_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Rule_Upkeep_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Event_Upkeep_Discharge_Magnification_List: 0
+  Event_Upkeep_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Event_Upkeep_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Tech_BuildingCost_Discharge_Magnification_List: 0
+  Tech_BuildingCost_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Tech_BuildingCost_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Event_BuildingCost_Discharge_Magnification_List: 0
+  Event_BuildingCost_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Event_BuildingCost_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Tech_Production_Type_Integer_List: 0300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  Tech_Production_Version_Integer_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Tech_Production_Discharge_Magnification_List: 0
+  Tech_Production_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Tech_Production_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Rule_Production_Discharge_Magnification_List: 0
+  Rule_Production_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Rule_Production_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Event_Production_Discharge_Magnification_List: 0
+  Event_Production_Type_Magnification_List:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Event_Production_Version_Magnification_List:
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  - Version_List:
+    - 0
+    - 0
+    - 0
+    - 0
+  Tech_AllResource_Intger_List: []
+  Escalation_Production_Magnification:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  HungryCount: 3
+  OnActiveRuleList: 
+  Rule_Active_Max: 
+  Rule_Active_Current: 
+  Rule_Active_Delay_Max: 
+  Rule_Active_Delay_Current: 
+  Will_Production_Magnification: 1
+  Spacial_Effect_Unlock:
+  - List: 0000000000000000000000000000000000000000
+  - List: 0000000000000000000000000000000000000000
+  - List: 0000000000000000000000000000000000000000
+  TurnButton: {fileID: 0}
+  Will: {fileID: 0}
+  Hope: {fileID: 0}
+  Complaint: {fileID: 0}
+  TurnGage: {fileID: 0}
+  Turn_Wheel: {fileID: 0}
+  Tech_Food_Integer: 0
+  Tech_Food_Magnification: 1
+  Rule_Food_Integer: 0
+  Rule_Food_Magnification: 1
+  MaxTurn: 50
+  CurrentTurn: 1
+  Bd:
+  - BD_Version:
+    - Type: 1
+      Version: 1
+      Image: {fileID: 21300000, guid: 018fedc59ee7c524996f7508511265ba, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB178\uCC9C \uC6A9\uAD11\uB85C"
+      Contents: " \uCCA0 \uAD11\uC0C1 \uC8FC\uBCC0\uC5D0 \uAC04\uB2E8\uD55C \uCC44\uAD11
+        \uB3C4\uAD6C\uC640 \uAE09\uC870\uD55C \uC6A9\uAD11\uB85C\uB97C \uB298\uC5EC\uB193\uC740
+        \uACF3\uC785\uB2C8\uB2E4. \uB178\uB3D9\uC790\uB4E4\uC740 \uC774\uACF3\uC5D0\uC11C
+        \uCC44\uAD74\uACFC \uAC00\uACF5\uC744 \uB3D9\uC2DC\uC5D0 \uD569\uB2C8\uB2E4.
+        \uBD84\uC5C5\uC774 \uB354 \uD6A8\uC728\uC774 \uC88B\uC9C0\uB9CC \uC77C\uB2E8\uC740
+        \uCCA0\uC744 \uC5BB\uB294 \uB2E4\uB294 \uAC83 \uC790\uCCB4\uAC00 \uC911\uC694\uD569\uB2C8\uB2E4.
+        \uCCA0 \uAD11\uC0C1 \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC \uC544\uC8FC \uC801\uC740
+        \uC591\uC758 \uCCA0\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4. "
+      ShortContents: " \uAC00\uC7A5 \uAE30\uCD08\uC801\uC778 \uCC44\uAD11\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB2E4\uB978
+        \uC720\uC9C0\uBE44\uAC00 \uB4E4\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uCCA0 \uAD11\uC0C1
+        \uC704\uC5D0 \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 10
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 08000000
+      BuildCost_Value:
+      - 25
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 1
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+    - Type: 1
+      Version: 2
+      Image: {fileID: 21300000, guid: 922554709a73b784fa49bad95cf46c27, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC18C\uD615 \uC81C\uAC15\uB85C"
+      Contents: " \uCDA9\uBD84\uD55C \uC591\uC758 \uCCA0\uC774 \uBAA8\uC774\uBA74
+        \uAC00\uC7A5 \uBA3C\uC800 \uD558\uB294 \uC77C\uC740 \uBC14\uB85C \uB354 \uB9CE\uC740
+        \uCCA0\uC744 \uBAA8\uC73C\uAE30 \uC704\uD574 \uC124\uBE44\uB97C \uBCF4\uCDA9
+        \uD558\uB294 \uAC83\uC785\uB2C8\uB2E4. \uC880 \uB354 \uC804\uBB38\uC801\uC778
+        \uC124\uBE44(\uC0BD\uC5D0\uC11C \uACE1\uAD2D\uC774)\uB85C \uAD50\uCCB4\uD55C
+        \uB355\uC5D0 \uD6A8\uC728\uC774 \uB298\uC5C8\uC2B5\uB2C8\uB2E4. \uB178\uB3D9\uC790\uB4E4\uC758
+        \uD314\uB69D\uC774 \uAD49\uC7A5\uD788 \uB450\uAEBC\uC6CC\uC9C0\uACE0 \uC788\uC5B4
+        \uC791\uC5C5\uBCF5\uC744 \uAD50\uCCB4\uD574\uC57C\uD560\uC9C0\uB3C4 \uBAA8\uB974\uACA0\uC2B5\uB2C8\uB2E4.
+        \uCCA0 \uAD11\uC0C1 \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC \uC801\uC740 \uC591\uC758
+        \uCCA0\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: " \uAE30\uBCF8\uC801\uC778 \uCC44\uAD11\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uC870\uAE08 \uB192\uC544\uC84C\uC9C0\uB9CC \uC5EC\uC804\uD788
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB2E4\uB978
+        \uC720\uC9C0\uBE44\uAC00 \uB4E4\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uCCA0 \uAD11\uC0C1
+        \uC704\uC5D0 \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: -5
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+    - Type: 1
+      Version: 3
+      Image: {fileID: 21300000, guid: ba2c93bc28f5eba46beca1c78bfab282, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uAE30\uC2DD \uC81C\uCCA0\uC18C"
+      Contents: " \uC99D\uAE30 \uAE30\uAD00\uC758 \uB9C9\uB300\uD55C \uC6B4\uB3D9\uB825\uC744
+        \uC774\uC6A9\uD574 \uC804\uC6A9 \uAD74\uCC29\uAE30\uC640 \uB300\uD615 \uC6A9\uAD11\uB85C\uB97C
+        \uD55C\uAEBC\uBC88\uC5D0 \uAC00\uB3D9\uD569\uB2C8\uB2E4. \uACE1\uAD2D\uC774\uC5D0\uC11C
+        \uBC97\uC5B4\uB09C \uB178\uB3D9\uC790\uB4E4\uC774 \uD658\uD638\uD558\uBA70
+        \uAE30\uC220\uC758 \uC704\uB300\uD568\uC744 \uCC2C\uC591\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+        \uAD74\uCC29\uAE30\uAC00 \uBC49\uC5B4\uB0B4\uB294 \uB9C9\uB300\uD55C \uC591\uC758
+        \uCCA0\uAD11\uC11D\uC744 \uC62E\uACA8\uC57C\uD55C\uB2E4\uB294 \uAC83\uC740
+        \uAFC8\uC5D0\uB3C4 \uBAA8\uB978 \uCC44 \uB9D0\uC785\uB2C8\uB2E4. \uCCA0 \uAD11\uC0C1
+        \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC \uCCA0\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: " \uBCF8\uACA9\uC801\uC778 \uCC44\uAD11\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uAC74\uC124\uBE44\uC6A9\uACFC \uC720\uC9C0\uBE44\uAC00 \uB192\uC740 \uD3B8\uC774\uC9C0\uB9CC
+        \uADF8\uB9CC\uD07C \uB9CE\uC740 \uC0DD\uC0B0\uB7C9\uC744 \uBCF4\uC7A5\uD569\uB2C8\uB2E4.
+        \uCCA0 \uAD11\uC0C1 \uC704\uC5D0 \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: -6
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+    - Type: 1
+      Version: 4
+      Image: {fileID: 21300000, guid: b003d53819fad4041a2fca52c0be0d74, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uAE30\uACC4\uD654 \uC81C\uCCA0\uC18C"
+      Contents: " \uB3C4\uC2DC\uC758 \uADDC\uBAA8\uC640 \uC131\uC7A5\uC18D\uB3C4\uB294
+        \uC774 \uAE30\uACC4\uD654\uB41C \uC81C\uCCA0\uC18C\uC758 \uC22B\uC790\uC5D0
+        \uB530\uB978\uB2E4\uACE0 \uBD10\uB3C4 \uACFC\uC5B8\uC774 \uC544\uB2D9\uB2C8\uB2E4.
+        \uC9C0\uCE58\uC9C0 \uC54A\uB294 \uAE30\uACC4 \uCC44\uAD74\uAE30\uC640 \uADF8
+        \uC704\uC5D0 \uC124\uCE58\uB41C \uC6A9\uAD11\uB85C\uAC00 \uBB34\uC9C0\uB9C9\uC9C0\uD55C
+        \uC18D\uB3C4\uB85C \uCCA0\uC744 \uD1A0\uD574\uB0B4\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+        \uB178\uB3D9\uC790\uB4E4\uC740 \uB4DC\uB514\uC5B4 \uB545\uC744 \uD5E4\uC9D1\uACE0
+        \uB3CC\uC744 \uC62E\uAE30\uB294 \uB2E8\uC21C \uC791\uC5C5\uC5D0\uC11C \uBC97\uC5B4\uB098
+        \uAE30\uACC4\uB97C \uB2E6\uACE0 \uC870\uC774\uACE0 \uAE30\uB984\uCE60\uD558\uB294
+        \uB35C \uB2E8\uC21C\uD55C \uC791\uC5C5\uC5D0 \uC9D1\uC911\uD560 \uC218 \uC788\uAC8C
+        \uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uCCA0 \uAD11\uC0C1 \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC
+        \uB9CE\uC740 \uC591\uC758 \uCCA0\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: -7
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+  - BD_Version:
+    - Type: 2
+      Version: 1
+      Image: {fileID: 21300000, guid: b0e0f5d5cc361964d965706e7d1f8cf0, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uCCA0\uACF5\uC18C"
+      Contents: " \uBD80\uD488\uC740 \uCCA0\uB9CC\uD07C\uC774\uB098 \uC4F0\uC784\uC0C8\uAC00
+        \uB9CE\uC740 \uC18C\uBAA8\uC7AC\uC785\uB2C8\uB2E4. \uD56D\uC0C1 \uB300\uB7C9\uC774
+        \uD544\uC694\uD55C \uB9CC\uD07C \uC548\uC815\uC801\uC778 \uC0DD\uC0B0 \uC2DC\uC124\uC744
+        \uB9CC\uB4E4 \uD544\uC694\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uCCA0\uACF5\uC18C\uB294
+        \uC774\uB7F0 \uBD80\uD488 \uC218\uC694\uB97C \uCDA9\uB2F9\uD558\uAE30 \uC704\uD55C
+        \uAC74\uBB3C\uB85C \uB178\uB3D9\uC790\uB4E4\uC740 \uC774\uACF3\uC5D0\uC11C
+        \uAE4E\uACE0 \uB2E4\uB4EC\uACE0 \uC0AC\uD3EC\uC9C8\uD558\uBA70 \uBD80\uD488\uC744
+        \uB9CC\uB4E4\uC5B4\uB0C5\uB2C8\uB2E4. \uC544\uC8FC \uC801\uC740 \uC591\uC758
+        \uBD80\uD488\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: " \uAC00\uC7A5 \uAE30\uCD08\uC801\uC778 \uAC00\uACF5\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uC5EC \uCD08\uBC18\uC5D0
+        \uC4F0\uAE30 \uC88B\uC2B5\uB2C8\uB2E4. \uCCA0\uC744 \uC18C\uBAA8\uD558\uC5EC
+        \uBD80\uD488\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4. "
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 5
+      Production_Value: 9
+      Upkeep_Type: 00000000
+      Upkeep_Value:
+      - 21
+      BuildCost_Type: 0800000001000000
+      BuildCost_Value:
+      - 60
+      - 30
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 1
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 2
+      Version: 2
+      Image: {fileID: 21300000, guid: 13f237e70b7726e4883aaff4831e16c3, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uAE30\uC2DD \uACF5\uBC29"
+      Contents: " \uC99D\uAE30 \uAE30\uAD00\uC5D0 \uC5F0\uACB0\uB41C \uC808\uC0AD
+        \uAE30\uACC4 \uB355\uC5D0 \uBD80\uD488\uC758 \uC9C8\uACFC \uC591\uC774 \uB298\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uAE30\uACC4\uC758 \uC9C4\uB3D9\uC73C\uB85C \uAC74\uBB3C\uC758 \uAE30\uB465\uC774
+        \uD754\uB4E4\uB9AC\uB294 \uAC83\uC5D0 \uB178\uB3D9\uC790\uB4E4\uC774 \uBD88\uC548\uC744
+        \uB290\uB07C\uC9C0\uB9CC \uAE30\uB465\uC744 \uCCA0\uAC70\uD558\uC790 \uC774\uB0B4
+        \uC7A0\uC7A0\uD574\uC84C\uC2B5\uB2C8\uB2E4. \uC801\uC740 \uC591\uC758 \uBD80\uD488\uC744
+        \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: " \uAE30\uBCF8\uC801\uC778 \uAC00\uACF5\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uC870\uAE08 \uB192\uC544\uC84C\uC9C0\uB9CC \uC99D\uAE30\uB9DD\uC5D0
+        \uC5F0\uACB0\uB418\uC5B4 \uC788\uC5B4\uC57C\uD569\uB2C8\uB2E4. \uCCA0\uC744
+        \uC18C\uBAA8\uD558\uC5EC \uBD80\uD488\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4. "
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 1
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 2
+      Allow_Disaster: 2
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 2
+      Version: 3
+      Image: {fileID: 21300000, guid: c899d54f8bc8cbe4faf2b9e4dda00a57, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uBD80\uD488 \uACF5\uC7A5"
+      Contents: " \uC138\uB828\uB418\uACE0 \uC6B0\uC544\uD55C \uACF5\uD559 \uAE30\uC220\uC758
+        \uD61C\uD0DD \uB355\uBD84\uC5D0 \uB178\uB3D9\uC790\uB4E4\uC740 \uCF8C\uC801\uD558\uAC8C
+        \uBD80\uD488\uC744 \uC0DD\uC0B0\uD560 \uC218 \uC788\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uC2DC\uB044\uB7EC\uC6B4 \uC18C\uC74C \uB54C\uBB38\uC778\uC9C0 \uB178\uB3D9\uC790\uB4E4\uC774
+        \uC774\uBC88\uC5D4 \uC774\uBA85\uC744 \uD638\uC18C\uD558\uC9C0\uB9CC \uADC0\uB9C8\uAC1C\uB97C
+        \uBCF4\uAE09\uD558\uB294 \uAC83\uC73C\uB85C \uC27D\uAC8C \uD574\uACB0\uD588\uC2B5\uB2C8\uB2E4.
+        \uBD80\uD488\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 1
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 4
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 2
+      Version: 4
+      Image: {fileID: 21300000, guid: dc685af67756b7043b14cfb4d7561219, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB85C\uC774\uB4DC\uC2DD \uC790\uB3D9\uD654 \uACF5\uC7A5"
+      Contents: " \uAC1C\uCC99\uC9C0\uC5D0 \uD558\uB098\uC529\uC740 \uC788\uB358
+        \uC790\uB3D9 \uC870\uBCD1\uCC3D\uC758 \uAD6C\uC870\uB97C \uBCF8 \uB530 \uB9CC\uB4E0
+        \uACF5\uC7A5\uC785\uB2C8\uB2E4. \uBB34\uC2DC\uD574\uB3C4 \uB418\uB294 \uBA87
+        \uAC00\uC9C0 \uC548\uC804\uC7A5\uCE58\uB97C \uC0DD\uB7B5\uD55C \uB355\uC5D0
+        \uC774 \uACF5\uC7A5\uC740 \uBE60\uB978 \uC18D\uB3C4\uB85C \uC26C\uC9C0 \uC54A\uACE0
+        \uD569\uAE08\uC744 \uAE4E\uC544\uB0B4\uC5B4 \uB2E4\uC885\uB2E4\uB7C9\uC758
+        \uBD80\uD488\uC744 \uC0DD\uC0B0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB9CE\uC740
+        \uC591\uC758 \uBD80\uD488\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 1
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 6
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 3
+      Version: 1
+      Image: {fileID: 21300000, guid: c899d54f8bc8cbe4faf2b9e4dda00a57, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC81C\uB828\uC18C"
+      Contents: " \uCCA0\uC740 \uD6CC\uB96D\uD55C \uAE08\uC18D\uC774\uC9C0\uB9CC
+        \uB354 \uD2BC\uD2BC\uD55C \uAE30\uACC4\uB97C \uB9CC\uB4E4\uAE30 \uC704\uD574\uC120
+        \uCCA0-\uACE8\uB514\uC628 \uD569\uAE08\uC774 \uD544\uC694\uD569\uB2C8\uB2E4.
+        \uC774 \uACFC\uC815\uC740 \uC81C\uBC95 \uAE4C\uB2E4\uB86D\uAE30\uC5D0 \uB178\uB3D9\uC790\uB4E4\uC740
+        \uD56D\uC0C1 \uC2E0\uACBD\uC774 \uACE4\uB450 \uC120 \uCC44\uB85C \uC791\uC5C5\uD558\uACE0
+        \uC788\uC2B5\uB2C8\uB2E4. \uD55C \uB208 \uD314\uB2E4\uAC04 \uC790\uAE30 \uBC1C\uB4F1\uC5D0
+        \uB053\uB294 \uC1F3\uBB3C\uC744 \uBD80\uC5B4\uBC84\uB9B4 \uC218 \uC788\uAE30
+        \uB54C\uBB38\uC785\uB2C8\uB2E4. \uC801\uC740 \uC591\uC758 \uD569\uAE08\uC744
+        \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 2
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: -7
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 3
+      Version: 2
+      Image: {fileID: 21300000, guid: 42b0817642974fc4681b436e0f5616f0, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB85C\uC774\uB4DC\uC2DD \uC81C\uB828\uC18C"
+      Contents: " \uB85C\uC774\uB4DC \uAE30\uC220\uC744 \uC811\uBAA9\uD55C \uC81C\uB828\uC18C\uB294
+        \uC5B4\uB9C8\uC5B4\uB9C8\uD55C \uC591\uC758 \uCCA0\uACFC \uACE8\uB514\uC628\uC744
+        \uB2E8\uC228\uC5D0 \uD569\uAE08\uC73C\uB85C \uB9CC\uB4E4\uC5B4\uBC84\uB9BD\uB2C8\uB2E4.
+        \uC704\uD5D8\uD55C \uC791\uC5C5\uC5D0\uC11C \uBC97\uC5B4\uB0AC\uC9C0\uB9CC
+        \uD560\uB2F9\uB7C9\uC774 \uB298\uC5B4\uB098 \uACB0\uAD6D \uB2EC\uB77C\uC9C4
+        \uAC83\uC774 \uC5C6\uB294 \uADFC\uBB34 \uD658\uACBD\uC5D0 \uB178\uB3D9\uC790\uB4E4\uC774
+        \uC808\uB9DD\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uD569\uAE08\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 2
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 4
+      Version: 1
+      Image: {fileID: 21300000, guid: c9e2d70bd6fd1ec44a6640a4a8d00347, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uAC04\uC774 \uCC44\uAD11\uAE30"
+      Contents: " \uBCF8\uC0AC\uC758 \uC694\uCCAD\uC5D0 \uB530\uB77C \uC2A4\uD2F8\uC6E8\uC77C\uC5D0
+        \uD0D1\uC7AC\uD588\uB358 \uC18C\uD615 \uCC44\uAD11\uAE30\uC5D0 \uC774\uAC83\uC800\uAC83
+        \uC7A1\uB2E4\uD55C \uBD80\uD488\uACFC \uC9C0\uC9C0\uB300\uB97C \uB367\uB304
+        \uC7A5\uCE58\uC785\uB2C8\uB2E4. \uBD88\uC548\uD574 \uBCF4\uC774\uC9C0\uB9CC
+        \uC81C \uD560 \uC77C\uC744 \uB611\uBC14\uB85C \uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+        \uADFC\uCC98\uC758 \uC11D\uD0C4\uC774\uB098 \uBC1C\uD654\uC11D\uC744 \uCC44\uAD74\uD558\uC5EC
+        \uC544\uC8FC \uC801\uC740 \uC591\uC758 \uC5F0\uB8CC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: "\uAE30\uCD08\uC801\uC778 \uCC44\uAD11\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB2E4\uB978
+        \uC720\uC9C0\uBE44\uAC00 \uB4E4\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uBC1C\uD654\uC11D
+        \uADFC\uCC98\uC5D0 \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 3
+      Production_Value: 10
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 08000000
+      BuildCost_Value:
+      - 30
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 1
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 4
+      Version: 2
+      Image: {fileID: 21300000, guid: 1f8151acd77e79a42b6cb43099c22737, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uBC18\uC790\uB3D9 \uCC44\uAD11\uAE30"
+      Contents: " \uC9C0\uBD80\uC7A5\uC2E4 \uAD6C\uC11D\uC5D0 \uCC98\uBC15\uD600\uC788\uB358
+        \uC870\uB9BD \uB9E4\uB274\uC5BC\uC744 \uCC3E\uC544\uB0B8 \uB355\uC5D0, \uC791\uC5C5\uC744
+        \uB2E8\uC21C\uD654 \uD558\uBA74\uC11C\uB3C4 \uC548\uC815\uC131\uC744 \uD5A5\uC0C1
+        \uC2DC\uD0A4\uB294 \uBCF4\uC870 \uC7A5\uCE58\uB97C \uB9CC\uB4E4 \uC218 \uC788\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uCC44\uAD11\uAE30\uAC00 \uC774\uC804\uBCF4\uB2E4 \uB354\uC6B1 \uC2EC\uD558\uAC8C
+        \uD754\uB4E4\uB9AC\uACE0 \uC788\uC9C0\uB9CC \uBCF4\uC870 \uC7A5\uCE58\uB97C
+        \uB2EC\uC558\uC73C\uB2C8 \uD070 \uBB38\uC81C\uB294 \uC5C6\uC744 \uAC83\uC785\uB2C8\uB2E4.
+        \uB9E4\uB274\uC5BC\uC740 \uAC70\uC9D3\uB9D0\uC744 \uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.
+        \uADFC\uCC98\uC758 \uC11D\uD0C4\uC774\uB098 \uBC1C\uD654\uC11D\uC744 \uCC44\uAD74\uD558\uC5EC
+        \uC544\uC8FC \uC801\uC740 \uC591\uC758 \uC5F0\uB8CC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 3
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 2
+      Allow_Disaster: -5
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 4
+      Version: 3
+      Image: {fileID: 21300000, guid: 4ebaa88d7720b9849a50e2f7c64e8717, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uAE30\uC2DD \uCC44\uAD11\uAE30"
+      Contents: " \uC544\uBB34\uB9AC \uAC1C\uB7C9\uD55C\uB2E4\uACE0 \uD558\uC9C0\uB9CC
+        \uC18C\uD615 \uCC44\uAD11\uAE30\uC758 \uACF5\uAE09\uB7C9\uC5D0\uB294 \uD55C\uACC4\uAC00
+        \uC788\uAE30\uC5D0, \uC99D\uAE30 \uAE30\uAD00\uC5D0 \uC5F0\uACB0\uB41C \uB4DC\uB9B4\uB85C
+        \uC791\uB3D9\uD558\uB294 \uCC44\uAD11\uAE30\uB97C \uB9CC\uB4E4\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uD56D\uC0C1 \uACA9\uB82C\uD788 \uCDA4\uCD94\uB358 \uCC44\uAD11\uAE30\uAC00
+        \uC58C\uC804\uD558\uAC8C \uB4DC\uB9B4\uB9CC \uB3CC\uB9AC\uB294 \uAC83\uC744
+        \uBCF4\uACE0 \uB178\uB3D9\uC790\uB4E4\uC774 \uAE30\uACC4 \uACE0\uC7A5\uC744
+        \uC758\uC2EC\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uADFC\uCC98\uC758 \uC11D\uD0C4\uC774\uB098
+        \uBC1C\uD654\uC11D\uC744 \uCC44\uAD74\uD558\uC5EC \uC5F0\uB8CC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 3
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 4
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 4
+      Version: 4
+      Image: {fileID: 21300000, guid: 4ebaa88d7720b9849a50e2f7c64e8717, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB77C\uC2A4\uD0C4\uC2DD \uC2DC\uCD94\uAE30"
+      Contents: " \uB77C\uC2A4\uD0C4 \uAE30\uC220\uC744 \uC811\uBAA9\uD55C \uCC44\uAD11\uAE30\uB294
+        \uCC28\uB77C\uB9AC \uC2DC\uCD94\uAE30\uB77C\uACE0 \uBD80\uB974\uB294 \uAC8C
+        \uC5B4\uC6B8\uB9B4 \uC815\uB3C4\uB85C \uAD49\uC7A5\uD788 \uAE4A\uAC8C \uD314
+        \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB545\uC744 \uD314 \uB54C \uB9C8\uB2E4
+        \uB4E4\uB9AC\uB294 \uD070 \uC18C\uC74C\uC5D0 \uBC24\uC7A0\uC744 \uC124\uCE58\uB294
+        \uC0AC\uB78C\uB4E4\uC774 \uB9CE\uC73C\uB2C8 \uC57C\uAC04 \uADFC\uBB34 \uC911\uC5D0\uB294
+        \uAC00\uB2A5\uD55C \uB0AE\uC5D0 \uD30C\uB0B8 \uC790\uC6D0\uC744 \uC218\uAC70\uD558\uB294
+        \uAC83\uC774 \uC88B\uACA0\uC2B5\uB2C8\uB2E4. \uADFC\uCC98\uC758 \uC11D\uD0C4\uC774\uB098
+        \uBC1C\uD654\uC11D\uC744 \uCC44\uAD74\uD558\uC5EC \uC5F0\uB8CC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 3
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 6
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 5
+      Version: 1
+      Image: {fileID: 21300000, guid: d4b5f77238f03c6419f5c1ae1eb61f4a, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uB958 \uC5F0"
+      Contents: " \uACE8\uB514\uC628 \uAC04\uD5D0\uCC9C \uC704\uC5D0\uB294 \uD56D\uC0C1
+        \uAC70\uC13C \uC0C1\uC2B9\uAE30\uB958\uC640 \uD568\uAED8 \uC99D\uAE30\uAC00
+        \uBFDC\uC5B4\uC838 \uB098\uC635\uB2C8\uB2E4. \uCEE4\uB2E4\uB780 \uC5F0\uC5D0
+        \uC791\uC740 \uC751\uACB0 \uAE30\uAD6C\uB97C \uB9E4\uB2EC\uC544\uB454 \uC774
+        \uC7A5\uCE58\uB294 \uC99D\uAE30 \uC18D\uC5D0 \uC11E\uC5EC\uC788\uB294 \uC21C\uB3C4
+        \uB192\uC740 \uACE8\uB514\uC628\uC744 \uBAA8\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uACE8\uB514\uC628 \uAC04\uD5D0\uCC9C \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC
+        \uC544\uC8FC \uC801\uC740 \uC591\uC758 \uACE8\uB514\uC628\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: "\uAE30\uCD08\uC801\uC778 \uC815\uC81C\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB3C4\uC758
+        \uC804\uB825\uB9DD\uC774\uB098 \uC99D\uAE30\uB9DD\uC774 \uD544\uC694\uD558\uC9C0
+        \uC54A\uC2B5\uB2C8\uB2E4. \uACE8\uB514\uC628 \uAC04\uD5D0\uCC9C \uC704\uC5D0
+        \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 4
+      Production_Value: 10
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 00000000
+      BuildCost_Value:
+      - 20
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: -3
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+    - Type: 5
+      Version: 2
+      Image: {fileID: 21300000, guid: cca68eb91b17b6341aea6eec006964ad, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uB958 \uC5F4\uAE30\uAD6C"
+      Contents: " \uC99D\uB958 \uC5F0\uC5D0\uC11C \uD55C\uCE35 \uBC1C\uC804\uD55C
+        \uD615\uD0DC\uC758 \uC774 \uC7A5\uCE58\uB294 \uC5F0\uACFC \uB3D9\uC77C\uD55C
+        \uBC29\uC2DD\uC73C\uB85C \uC791\uB3D9\uD558\uC9C0\uB9CC \uC624\uB79C \uC2DC\uAC04
+        \uBE44\uD589\uC774 \uAC00\uB2A5\uD55C \uC5F4\uAE30\uAD6C\uB97C \uD1B5\uD574
+        \uB354 \uB9CE\uC740 \uACE8\uB514\uC628\uC744 \uBAA8\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC2E4\uC81C \uC0AC\uB840\uC5D0\uC11C \uBE44\uB86F\uB41C \uC870\uC5B8\uC5D0
+        \uB530\uB77C, \uC5B4\uB9B0 \uC544\uC774\uB098 \uCDE8\uAC1D\uC774 \uC904\uC744
+        \uD0C0\uACE0 \uC62C\uB77C\uAC00\uC9C0 \uC54A\uAC8C \uC0AC\uC2AC\uC5D0 \uAE30\uB984\uC744
+        \uBC1C\uB790\uC2B5\uB2C8\uB2E4. \uACE8\uB514\uC628 \uAC04\uD5D0\uCC9C \uC704\uC5D0
+        \uC124\uCE58\uD558\uC5EC \uC801\uC740 \uC591\uC758 \uACE8\uB514\uC628\uC744
+        \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 4
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 3
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+    - Type: 5
+      Version: 3
+      Image: {fileID: 21300000, guid: 18340bf4de8ad394297eff44ee40deab, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uACE8\uB514\uC628 \uCD94\uCD9C\uAE30"
+      Contents: " \uAC15\uB825\uD55C \uC555\uB825\uC744 \uACAC\uB38C\uB0B4\uB294
+        \uC81C\uB828 \uAE30\uC220\uC774 \uD655\uBCF4\uB418\uBA74 \uAC04\uD5D0\uCC9C
+        \uC704\uC5D0\uC11C \uC9C1\uC811 \uC5F4\uC218\uC640 \uC218\uC99D\uAE30\uB97C
+        \uBF51\uC544\uB0B4\uB294 \uCD94\uCD9C\uAE30\uB97C \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC815\uC81C \uACFC\uC815\uC5D0\uC11C \uAC70\uB300\uD55C \uC815\uC81C\uAE30\uB97C
+        \uB3CC\uB824\uC57C\uD558\uC9C0\uB9CC \uC5EC\uAE30\uC11C \uC5BB\uC740 \uC5F4\uC218\uB97C
+        \uB053\uC5EC \uB098\uC624\uB294 \uC99D\uAE30\uB85C \uAC00\uB3D9\uC2DC\uD0AC
+        \uC218 \uC788\uAE30\uC5D0 \uD070 \uBB38\uC81C\uB294 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uACE8\uB514\uC628 \uAC04\uD5D0\uCC9C \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC
+        \uB9CE\uC740 \uC591\uC758 \uACE8\uB514\uC628\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 4
+      Workable_Ontile: 0
+      Production_Type: 4
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 5
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+    - Type: 5
+      Version: 4
+      Image: {fileID: 21300000, guid: 18340bf4de8ad394297eff44ee40deab, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uAE30\uC2DD \uACE8\uB514\uC628 \uCD94\uCD9C\uAE30"
+      Contents: " \uC99D\uAE30 \uC8FC\uC785\uC73C\uB85C \uAC04\uD5D0\uCC9C\uC758
+        \uBD84\uCD9C\uB7C9\uC744 \uD68D\uAE30\uC801\uC73C\uB85C \uB298\uB9B0 \uCD94\uCD9C\uAE30\uC785\uB2C8\uB2E4.
+        \uB2E4\uB9CC \uACE0\uC555\uB825 \uC99D\uAE30 \uC8FC\uC785\uC73C\uB85C \uC778\uD574
+        \uCD94\uCD9C\uBB3C\uC5D0 \uB2E4\uC218\uC758 \uC774\uBB3C\uC9C8\uC774 \uC11E\uC5EC\uC11C
+        \uB098\uC624\uAC8C \uB418\uC5B4 \uC815\uC81C\uAE30\uC758 \uBD80\uD488\uC744
+        \uC790\uC8FC \uAD50\uCCB4\uD558\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uACE8\uB514\uC628
+        \uAC04\uD5D0\uCC9C \uC704\uC5D0 \uC124\uCE58\uD558\uC5EC \uC544\uC8FC \uB9CE\uC740
+        \uC591\uC758 \uACE8\uB514\uC628\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4. "
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 4
+      Workable_Ontile: 0
+      Production_Type: 4
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 7
+      Allow_Disaster: 2
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 1
+  - BD_Version:
+    - Type: 6
+      Version: 1
+      Image: {fileID: 21300000, guid: 9e640c0260fae4c4b9d0e0241a82b346, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB18D\uC7A5"
+      Contents: " \uC628\uC2E4 \uAC19\uC740 \uBCF8\uACA9\uC801\uC778 \uC0DD\uC0B0
+        \uC2DC\uC124\uC744 \uC9C0\uC744 \uC5EC\uB825\uC774 \uC5C6\uC744 \uACBD\uC6B0
+        \uB178\uB3D9\uB825\uC744 \uD65C\uC6A9\uD558\uC5EC \uC2DD\uC790\uC7AC\uB97C
+        \uC218\uAE09\uD558\uB294 \uC218\uBC16\uC5D0 \uC5C6\uC2B5\uB2C8\uB2E4. \uC774\uB807\uAC8C
+        \uB18D\uC0AC\uB97C \uC9C0\uC5B4 \uC7AC\uBC30\uD558\uB294 \uAC83\uC774 \uAE30\uAECF\uD574\uC57C
+        \uBCA0\uC774\uCEE8 \uB9DB \uC644\uB450\uCF69\uBFD0\uC778 \uAC8C \uC548\uD0C0\uAE5D\uC9C0\uB9CC
+        \uC5B4\uCA54 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uC544\uC8FC \uC801\uC740 \uC591\uC758
+        \uC2DD\uC790\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: "\uAE30\uCD08\uC801\uC778 \uB18D\uC5C5\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB2E4\uB978
+        \uC720\uC9C0\uBE44\uAC00 \uB4E4\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uACF5\uD130\uC5D0
+        \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 5
+      Production_Value: 15
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 08000000
+      BuildCost_Value:
+      - 17
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 1
+      Allow_Disaster: -3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 6
+      Version: 2
+      Image: {fileID: 21300000, guid: 797f62ee3cafc9c4280335a12b2f2b1e, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC628\uC2E4"
+      Contents: " \uC678\uBD80 \uD658\uACBD\uACFC \uC5B4\uB290 \uC815\uB3C4 \uACA9\uB9AC\uB41C
+        \uC628\uC2E4\uC740 \uC548\uC804\uD558\uACE0 \uC2E0\uC18D\uD558\uAC8C \uC0AC\uB78C\uB4E4\uC774
+        \uBA39\uC744 \uC2DD\uC790\uC7AC\uB97C \uACF5\uAE09\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uADF8\uB798\uBD24\uC790 \uBCA0\uC774\uCEE8 \uB9DB\uC774 \uB098\uB294 \uC2DC\uAE08\uCE58\uBFD0\uC774\uC9C0\uB9CC\uC694.
+        \uC801\uC740 \uC591\uC758 \uC2DD\uC790\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 5
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: -3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 6
+      Version: 3
+      Image: {fileID: 21300000, guid: 70f189d9e1503704481bc899312c71ba, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC218\uACBD \uC628\uC2E4"
+      Contents: " \uB354 \uC138\uB828\uB41C \uC2DD\uC790\uC7AC\uB97C \uD5A5\uD55C
+        \uC695\uAD6C\uB294 \uC218\uACBD \uC7AC\uBC30\uB97C \uD558\uB294 \uC628\uC2E4\uC744
+        \uB9CC\uB4E4\uAE30\uC5D0 \uC774\uB974\uB800\uC2B5\uB2C8\uB2E4. \uC774\uC81C
+        \uC2EC\uC2EC\uD558\uBA74 \uC774\uBE68\uC5D0 \uB07C\uB294 \uC2DC\uAE08\uCE58\uC5D0\uC11C
+        \uBC97\uC5B4\uB098 \uBCA0\uC774\uCEE8 \uB9DB\uC774 \uB098\uB294 \uD1A0\uB780\uC744
+        \uBA39\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC2DD\uC790\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 5
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 6
+      Version: 4
+      Image: {fileID: 21300000, guid: 70f189d9e1503704481bc899312c71ba, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB85C\uC774\uB4DC\uC2DD \uC628\uC2E4"
+      Contents: " \uB3C4\uC2DC\uB97C \uC6B4\uC601\uD558\uB294 \uBAA8\uB4E0 \uC77C\uC774
+        \uACB0\uAD6D \uBA39\uACE0 \uC0B4\uAE30 \uC704\uD574 \uD558\uB294 \uC77C\uC778
+        \uB9CC\uD07C, \uC6B0\uB9AC\uB294 \uB354\uC6B1 \uC138\uB828\uB41C \uC2DD\uC790\uC7AC\uB97C
+        \uBA39\uC744 \uAD8C\uB9AC\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uB85C\uC774\uB4DC
+        \uAE30\uC220\uC744 \uC811\uBAA9\uD55C \uC628\uC2E4\uC740 \uC0AC\uB78C\uB4E4\uC774
+        \uC6D0\uD574 \uB9C8\uC9C0\uC54A\uB358 \uBCA0\uC774\uCEE8 \uB9DB\uC774 \uB098\uB294
+        \uB2F9\uADFC\uACFC \uD6C4\uCD94 \uB9DB\uC774 \uB098\uB294 \uC625\uC218\uC218\uB97C
+        \uACF5\uAE09\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB9CE\uC740 \uC591\uC758
+        \uC2DD\uC790\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 5
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 7
+      Version: 1
+      Image: {fileID: 21300000, guid: f7f6521a7e28c324cbc8ca789235e71d, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC57C\uC678 \uCDE8\uC0AC\uC7A5"
+      Contents: " \uACF5\uD130\uC5D0 \uCEE4\uB2E4\uB780 \uB0C4\uBE44 \uBA87 \uAC1C
+        \uAC00\uC838\uB2E4\uB193\uC740 \uC57C\uC678 \uCDE8\uC0AC\uC7A5\uC740 \uC5B4\uC124\uD504\uAC8C\uB098\uB9C8
+        \uC0AC\uB78C\uB4E4\uC774 \uBA39\uC744 \uC694\uB9AC\uB97C \uB9CC\uB4E4 \uC218
+        \uC788\uB294 \uC7A5\uC18C\uC785\uB2C8\uB2E4. \uBE44\uB85D \uBB3D\uC740 \uC218\uD504
+        \uBC16\uC5D0 \uC5C6\uC9C0\uB9CC \uCC28 \uB9C8\uC2DC\uB294 \uAE30\uBD84\uC73C\uB85C
+        \uBA39\uC73C\uBA74 \uC774\uAC83\uB3C4 \uC81C\uBC95 \uD48D\uBBF8\uAC00 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC801\uC740 \uC591\uC758 \uC2DD\uC0AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: "\uAE30\uCD08\uC801\uC778 \uBC30\uC2DD\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC2DD\uC790\uC7AC\uB97C \uC2DD\uB7C9\uC73C\uB85C \uAC00\uACF5\uD569\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC70\uB110\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB2E4\uB978
+        \uC720\uC9C0\uBE44\uAC00 \uB4E4\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uACF5\uD130\uC5D0
+        \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 6
+      Production_Value: 20
+      Upkeep_Type: 05000000
+      Upkeep_Value:
+      - 10
+      BuildCost_Type: 08000000
+      BuildCost_Value:
+      - 40
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 1
+      Allow_Disaster: -3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 7
+      Version: 2
+      Image: {fileID: 21300000, guid: fdb37c0e7ec5dd1499399183787a413a, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC2DD\uB2F9"
+      Contents: " \uC57C\uC678\uCDE8\uC0AC\uC7A5\uACFC \uC2DD\uB2F9\uC758 \uC911\uC694\uD55C
+        \uCC28\uC774\uC810\uC774\uB77C\uBA74 \uC9C0\uBD95\uACFC \uD14C\uC774\uBE14,
+        \uADF8\uB9AC\uACE0 \uC758\uC790\uAC00 \uC788\uB2E4\uB294 \uAC83\uC785\uB2C8\uB2E4.
+        \uC774\uC81C \uC0AC\uB78C\uB4E4\uC740 \uB545\uBC14\uB2E5\uC774 \uC544\uB2CC
+        \uC758\uC790\uC5D0 \uC549\uC544\uC11C \uAC74\uB354\uAE30\uAC00 \uB2F4\uAE34
+        \uC218\uD504\uB97C \uD640\uC9DD\uC77C \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC2DD\uC0AC\uB97C
+        \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 6
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 7
+      Version: 3
+      Image: {fileID: 21300000, guid: 94e9b106b6d104b42ab06e9b8e779515, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uBC30\uC2DD\uC18C"
+      Contents: " \uBC30\uC2DD\uC18C\uB294 \uAC78\uCB49\uD55C \uC218\uD504\uC5D0
+        \uC9C8\uB9B0 \uC0AC\uB78C\uB4E4\uC744 \uC704\uD574 \uBB3D\uC740 \uC2A4\uD29C\uB97C
+        \uC81C\uACF5\uD558\uB294 \uC2DC\uC124\uC785\uB2C8\uB2E4. \uC774 \uB458\uC758
+        \uCC28\uC774\uB97C \uBAA8\uB974\uACA0\uB2E4\uB294 \uC77C\uBD80 \uC2DC\uBBFC\uB4E4\uC744
+        \uC81C\uC678\uD558\uACE0\uC120 \uB300\uBD80\uBD84 \uB9CC\uC871\uD558\uB294
+        \uB208\uCE58\uC785\uB2C8\uB2E4. \uB9CE\uC740 \uC591\uC758 \uC2DD\uC0AC\uB97C
+        \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 6
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 8
+      Version: 1
+      Image: {fileID: 21300000, guid: 13f237e70b7726e4883aaff4831e16c3, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uD1B5\uC870\uB9BC \uACF5\uC7A5"
+      Contents: " \uC2A4\uD2F8 \uC6E8\uC77C\uC744 \uD0C0\uACE0 \uACE8\uB514\uB77D\uC2A4
+        \uC874\uC744 \uD5A5\uD558\uB294 \uAE38\uC740 \uBA40\uACE0\uB3C4 \uD5D8\uD569\uB2C8\uB2E4.
+        \uB530\uB77C\uC11C \uC2DD\uC0AC\uB97C \uC548\uC804\uD558\uACE0 \uC2E0\uC120\uD558\uAC8C
+        \uBCF4\uC874\uD560 \uD544\uC694\uC131\uC774 \uC0DD\uACBC\uACE0 \uB85C\uC774\uB4DC
+        \uBCF8\uC0AC\uC758 \uCD5C\uC2E0\uC2DD \uD3EC\uC7A5 \uAE30\uC220\uC744 \uC751\uC6A9\uD55C
+        \uD1B5\uC870\uB9BC \uACF5\uC7A5\uC744 \uB9CC\uB4E4\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uC190\uAC00\uB77D\uC744 \uC783\uC9C0 \uC54A\uB3C4\uB85D \uCE94 \uB530\uAC1C\uB3C4
+        \uAC19\uC774 \uB9CC\uB4ED\uB2C8\uB2E4. \uD1B5\uC870\uB9BC\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 7
+      Production_Value: 10
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 8
+      Version: 2
+      Image: {fileID: 21300000, guid: 9c2d58fc851c2764f89dc3bfb835d194, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC99D\uAE30\uC2DD \uD1B5\uC870\uB9BC \uACF5\uC7A5"
+      Contents: " \uC0AC\uB78C\uB4E4\uC774 \uB9CE\uC544\uC9C0\uACE0 \uAC08 \uAE38\uC774
+        \uBA40\uC5B4\uC9C0\uB294 \uC774 \uC0C1\uD669\uC5D0 \uD1B5\uC870\uB9BC\uC744
+        \uB9CC\uB4DC\uB294 \uAC83\uC870\uCC28\uB3C4 \uB9CE\uC740 \uB178\uB3D9\uB825\uC774
+        \uD544\uC694\uD574\uC84C\uC2B5\uB2C8\uB2E4. \uC774\uC81C \uC99D\uAE30 \uAE30\uAD00\uC744
+        \uC5F0\uACB0\uD574 \uD1B5\uC870\uB9BC\uC744 \uB300\uB7C9 \uC0DD\uC0B0\uD560
+        \uD544\uC694\uAC00 \uC0DD\uACBC\uC2B5\uB2C8\uB2E4. \uC774\uC81C \uB178\uB3D9\uC790\uB4E4\uC740
+        \uD1B5\uC870\uB9BC \uC0DD\uC0B0\uC740 \uAE30\uACC4\uC5D0 \uB9E1\uAE30\uACE0
+        \uCE94 \uB530\uAC1C\uC5D0 \uC9D1\uC911\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uB9CE\uC740 \uC591\uC758 \uD1B5\uC870\uB9BC\uC744 \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 7
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: -7
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 9
+      Version: 1
+      Image: {fileID: 21300000, guid: 606e1af766ca3124dab89de2c0ee7d78, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uBC8C\uBAA9\uD130"
+      Contents: " \uB4E4\uD310\uC5D0 \uB4EC\uC131\uB4EC\uC131 \uC790\uB780 \uC232\uC740
+        \uAD34\uC218\uB4E4\uC758 \uB465\uC9C0\uB85C \uC6D0\uB798\uB77C\uBA74 \uB3C4\uB07C\uC640
+        \uD1B1, \uD314\uB69D \uB450\uAEBC\uC6B4 \uC77C\uAFBC\uB9CC\uC73C\uB85C\uB294
+        \uC190\uC27D\uAC8C \uBCA0\uC5B4\uB0BC \uC218 \uC5C6\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uD558\uC9C0\uB9CC \uC138\uC0C1\uC774 \uB9DD\uD560 \uB54C \uAD34\uC218\uB4E4\uB3C4
+        \uB05D\uC7A5\uB09C \uB355\uC5D0 \uBB34\uC7A5\uD55C \uACBD\uBE44\uC6D0\uC774
+        \uC5C6\uC5B4\uB3C4 \uB420 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4. \uC774\uB807\uAC8C
+        \uC790\uB978 \uB098\uBB34\uB294 \uD604\uC7A5\uC5D0\uC11C \uAC04\uB2E8\uD55C
+        \uCC98\uB9AC\uB97C \uAC70\uCE5C \uD6C4 \uC720\uC6A9\uD558\uAC8C \uC0AC\uC6A9\uB429\uB2C8\uB2E4.
+        \uADFC\uCC98\uC758 \uB098\uBB34\uB97C \uBCA0\uC5B4 \uC544\uC8FC \uC801\uC740
+        \uC591\uC758 \uBAA9\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: "\uAE30\uCD08\uC801\uC778 \uC784\uC5C5\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC0DD\uC0B0\uB7C9\uC774 \uB9E4\uC6B0 \uB0AE\uC9C0\uB9CC \uADF8\uB9CC\uD07C
+        \uAC74\uC124\uBE44\uC6A9\uC774 \uC800\uB834\uD558\uACE0 \uBCC4\uB2E4\uB978
+        \uC720\uC9C0\uBE44\uAC00 \uB4E4\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uB098\uBB34
+        \uADFC\uCC98\uC5D0 \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 8
+      Production_Value: 10
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 1
+      Allow_Disaster: -4
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 9
+      Version: 2
+      Image: {fileID: 21300000, guid: 2e8a926769c2961498900e79a79ab4ee, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC81C\uC7AC\uC18C"
+      Contents: " \uACE8\uB514\uB77D\uC2A4 \uC874\uC5D0 \uD754\uD788 \uBCF4\uC774\uB294
+        \uD751\uCCA0\uBAA9\uC740 \uCCA0\uBD84\uC744 \uB2E4\uB7C9 \uD568\uC720\uD558\uACE0
+        \uC788\uC5B4 \uBCA0\uC5B4\uB0B4\uB294\uB370 \uC2DC\uAC04\uC774 \uD544\uC694\uD569\uB2C8\uB2E4.
+        \uB2E4\uD589\uD788 \uC2A4\uD2F8 \uC6E8\uC77C\uC5D0 \uC801\uC7AC\uB418\uC5B4\uC788\uB358
+        \uBC8C\uBAA9\uC6A9 \uAE30\uACC4\uD1B1\uC744 \uC774\uC6A9\uD558\uBA74 \uADF8
+        \uC2DC\uAC04\uC744 \uC904\uC77C \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uADFC\uCC98\uC758
+        \uB098\uBB34\uB97C \uBCA0\uC5B4 \uC801\uC740 \uC591\uC758 \uBAA9\uC7AC\uB97C
+        \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 8
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: -5
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 9
+      Version: 3
+      Image: {fileID: 21300000, guid: b09e0b8056c437d4d991c4b7b83f8204, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uAE30\uACC4\uC2DD \uC81C\uC7AC\uC18C"
+      Contents: " \uAE30\uC220\uC790\uB4E4\uC774 \uB9CC\uB4E0 \uC99D\uAE30\uC2DD
+        \uAE30\uACC4\uD1B1\uC740 \uC18C\uC74C\uC774 \uD06C\uC9C0\uB9CC \uC18D\uB3C4\uAC00
+        \uBE68\uB77C \uC2A4\uD2F8 \uC6E8\uC77C\uC758 \uADF8\uAC83\uBCF4\uB2E4 \uB354
+        \uBE60\uB974\uAC8C \uB098\uBB34\uB97C \uBCA8 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uB2E4\uB9CC \uC18C\uC74C \uB54C\uBB38\uC5D0 \uC778\uADFC \uAC70\uC8FC\uBBFC\uC758
+        \uBD88\uB9CC\uC774 \uB192\uC9C0\uB9CC \uC9C0\uBD80\uC7A5\uB2D8\uC774 \uC2E0\uACBD
+        \uC4F8 \uC218\uC900\uC740 \uC544\uB2D9\uB2C8\uB2E4. \uADFC\uCC98\uC758 \uB098\uBB34\uB97C
+        \uBCA0\uC5B4 \uBAA9\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 8
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 9
+      Version: 4
+      Image: {fileID: 21300000, guid: b09e0b8056c437d4d991c4b7b83f8204, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB77C\uC2A4\uD0C4\uC2DD \uBAA9\uC7AC\uACF5\uC7A5"
+      Contents: " \uB77C\uC2A4\uD0C4 \uAE30\uC220\uC744 \uC811\uBAA9\uD55C \uBAA9\uC7AC
+        \uACF5\uC7A5\uC740 \uD558\uB098\uC758 \uAC70\uB300\uD55C \uAE30\uACC4\uB85C
+        \uC2A4\uC2A4\uB85C \uAFB8\uBB3C\uAC70\uB9AC\uBA70 \uADFC\uCC98\uC758 \uB098\uBB34\uB97C
+        \uBCA0\uC5B4\uB0B4\uACE0 \uB2E4\uB4EC\uC5B4 \uC644\uC131\uD488\uC744 \uB0B4\uB193\uC740
+        \uBA4B\uC9C4 \uB140\uC11D\uC785\uB2C8\uB2E4! \uC5C4\uD55C \uACF3\uC73C\uB85C
+        \uAC00\uC9C0 \uC54A\uAC8C \uC628 \uD798\uC744 \uB2E4\uD574 \uBC29\uD5A5\uC744
+        \uD2C0\uC5B4\uC904 \uB178\uB3D9\uC790\uB4E4\uB9CC \uC788\uC73C\uBA74 \uB429\uB2C8\uB2E4.
+        \uADFC\uCC98\uC758 \uB098\uBB34\uB97C \uBCA0\uC5B4 \uB9CE\uC740 \uC591\uC758
+        \uBAA9\uC7AC\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4. "
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 8
+      Production_Value: 58
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 10
+      Version: 1
+      Image: {fileID: 21300000, guid: 49c2f80995d68654db095ce235d50def, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uCE58\uC548\uB300 \uC219\uC18C"
+      Contents: " \uC0AC\uB78C\uC758 \uD30C\uAD34\uC695\uAD6C\uB294 \uC138\uC0C1\uC774
+        \uB9DD\uD574\uB3C4 \uB048\uC9C8\uAE30\uAC8C \uB0A8\uC544\uC788\uC2B5\uB2C8\uB2E4.
+        \uC774 \uC881\uC740 \uC9D1\uB2E8 \uC548\uC5D0\uC11C\uB3C4 \uBC94\uC8C4\uAC00
+        \uC77C\uC5B4\uB098\uB294 \uAC83\uC744 \uBCF4\uBA74 \uC54C \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC774\uC5D0 \uC0AC\uB78C\uB4E4\uC740 \uACBD\uBE44\uB97C \uC11C\uACE0 \uC9C8\uC11C\uB97C
+        \uC720\uC9C0\uD560 \uCE58\uC548\uB300\uB97C \uC870\uC9C1\uD558\uC600\uC2B5\uB2C8\uB2E4.
+        \uC7A6\uC740 \uC21C\uCC30\uB85C \uC2DC\uBBFC\uB4E4\uC758 \uBC18\uAC10\uC744
+        \uC0AC\uAE30\uB294 \uD558\uC9C0\uB9CC, \uD655\uC2E4\uD55C \uBC29\uBC94\uD6A8\uACFC\uB97C
+        \uBCF4\uC774\uBBC0\uB85C \uBC16\uC73C\uB85C \uD45C\uCD9C\uD558\uC9C0\uB294
+        \uC54A\uC2B5\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744
+        \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uBD88\uB9CC\uACFC \uC758\uC9C0\uAC00 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 10
+      Version: 2
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC790\uACBD\uB2E8 \uD6C8\uB828\uC18C"
+      Contents: " \uC9D1\uB2E8\uC744 \uC880\uBA39\uB294 \uBC94\uC8C4\uC790\uB4E4\uC740
+        \uCE58\uC548\uB300\uB85C \uCDA9\uBD84\uD558\uC9C0\uB9CC \uAC04\uD639 \uACE8\uB514\uB77D\uC2A4
+        \uC874\uC73C\uB85C \uB4E4\uC5B4\uC624\uB294 \uAD34\uC218\uB4E4\uC740 \uCE58\uC548\uB300\uB85C\uB294
+        \uB9C9\uC744 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uD558\uC9C0\uB9CC \uC774\uB294
+        \uC2DD\uBBFC\uC9C0 \uAC1C\uCC99 \uB54C\uB3C4 \uC788\uB358 \uBB38\uC81C\uB85C
+        \uC774\uC804\uC5D0 \uD558\uB358 \uAC83\uCC98\uB7FC \uC790\uACBD\uB2E8 \uD6C8\uB828\uC18C\uB97C
+        \uC9C0\uC5B4 \uC0AC\uB78C\uB4E4\uC744 \uD6C8\uB828\uC2DC\uD0A4\uB294 \uAC83\uC73C\uB85C
+        \uD574\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC
+        \uC9C0\uC744 \uC218 \uC788\uC73C\uBA70 \uAD34\uC218 \uCE68\uC785 \uC774\uBCA4\uD2B8\uB97C
+        \uB9C9\uACE0 \uBD88\uB9CC\uC774 \uB0AE\uC544\uC9C0\uACE0 \uD76C\uB9DD, \uC758\uC9C0\uAC00
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 10
+      Version: 3
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC120\uC804\uBD80"
+      Contents: " \uADF8\uC800 \uC0B4\uC544\uB0A8\uC740 \uAC83\uC5D0 \uC548\uC8FC\uD558\uB294
+        \uAC83\uC73C\uB85C\uB294 \uC774 \uD5D8\uD55C \uC138\uC0C1\uC5D0 \uC801\uC751\uD560
+        \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uBB38\uBA85\uC758 \uB9C8\uC9C0\uB9C9 \uC0DD\uC874\uC790\uB85C\uC11C
+        \uC6B0\uB9AC\uAC00 \uC9CA\uC5B4\uC9C4 \uC758\uBB34\uB97C \uB2E4\uC2DC\uAE08
+        \uAC01\uC778\uC2DC\uD0AC \uBD80\uC11C\uAC00 \uC788\uC5B4\uC57C\uD569\uB2C8\uB2E4.
+        \uC120\uC804\uBD80\uB294 \uC774\uB7EC\uD55C \uC9C0\uBD80\uC7A5\uB2D8\uC758
+        \uB73B\uC744 \uBC1B\uB4E4\uAE30 \uC704\uD574 \uC274 \uC0C8 \uC5C6\uC774 \uC0AC\uB78C\uB4E4\uC5D0\uAC8C
+        \uADF8\uB4E4\uC774 \uD589\uD574\uC57C\uD560 \uC758\uBB34\uB97C \uAC00\uB974\uCE58\uB294
+        \uC2DC\uC124\uC785\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744
+        \uC218 \uC788\uC73C\uBA70 \uBD88\uB9CC\uC774 \uB0AE\uC544\uC9C0\uACE0 \uC758\uC9C0\uAC00
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4. \uBC18\uB3D9\uBD84\uC790 \uC774\uBCA4\uD2B8\uB97C
+        \uB9C9\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 10
+      Version: 4
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC2DC\uACC4\uD0D1 \uAD11\uC7A5"
+      Contents: " \uBCF8\uC0AC\uC758 \uBC29\uCE68\uC73C\uB85C\uB294 \uAC1C\uCC99\uC9C0\uAC00
+        \uC548\uC815\uAD8C\uC5D0 \uB4E4\uC5B4\uC11C\uBA74 \uAC00\uC7A5 \uBA3C\uC800
+        \uB192\uC740 \uC2DC\uACC4\uD0D1\uC744 \uC9C0\uC744 \uAC83\uC744 \uAD8C\uC7A5\uD569\uB2C8\uB2E4.
+        \uC6B0\uC218\uD55C \uACF5\uC5C5 \uAE30\uC220\uC744 \uB110\uB9AC \uC790\uB791\uD560
+        \uB9CC\uD55C \uB192\uC740 \uD0D1\uACFC \uC815\uD655\uD55C \uC2DC\uACC4\uB294
+        \uBB47 \uB85C\uC774\uB4DC\uC778\uB4E4\uC758 \uB85C\uB9DD\uC774\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uBB38\uBA85\uC758 \uB9C8\uC9C0\uB9C9 \uC0DD\uC874\uC790\uC778 \uC6B0\uB9AC\uB4E4\uC5D0\uAC8C
+        \uC774 \uC2DC\uACC4\uD0D1\uC740 \uB85C\uB9DD\uC774 \uC544\uB2C8\uB77C \uC758\uBB34\uC785\uB2C8\uB2E4.
+        \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744 \uC218 \uC788\uC73C\uBA70
+        \uD574\uCCB4\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uC9D3\uB294 \uC21C\uAC04
+        \uBD88\uB9CC\uC758 \uCD5C\uB300\uCE58\uAC00 \uB192\uC544\uC9C0\uBA70 \uC758\uC9C0\uC640
+        \uD76C\uB9DD\uC774 \uC601\uAD6C\uC801\uC73C\uB85C \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 8
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 11
+      Version: 1
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uB178\uB3D9\uC790 \uD569\uC219\uC18C"
+      Contents: " \uC0AC\uBA85\uAC10\uC5D0 \uB618\uB618 \uBB49\uCE5C \uB178\uB3D9\uC790\uB4E4\uC740
+        \uC5B8\uC81C\uB098 \uC758\uC695\uC801\uC774\uC9C0\uB9CC \uC790\uCE6B \uB3CC\uBC1C\uC801\uC778
+        \uD589\uB3D9\uC744 \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB178\uB3D9\uC790
+        \uD569\uC219\uC18C\uB294 \uC774 \uC5F4\uC815\uC801\uC778 \uB178\uB3D9\uC790\uB4E4\uC758
+        \uD734\uC2DD\uCC98\uB85C \uADF8\uB4E4\uC5D0\uAC8C \uD544\uC694\uD55C \uC8FC\uAC70\uACF5\uAC04\uC744
+        \uC81C\uACF5\uD558\uB294 \uAC83\uC740 \uBB3C\uB860 \uAC04\uB2E8\uD55C \uD3B8\uC758,
+        \uC758\uB8CC\uC9C0\uC6D0 \uC5ED\uC2DC \uAC00\uB2A5\uD569\uB2C8\uB2E4. \uC801\uC740
+        \uC8FC\uAC70 \uACF5\uAC04\uC744 \uC81C\uACF5\uD558\uBA70 \uBD88\uB9CC\uC774
+        \uB0AE\uC544\uC9C0\uACE0 \uD76C\uB9DD\uACFC \uC758\uC9C0\uAC00 \uC0C1\uC2B9\uD569\uB2C8\uB2E4.
+        \uC57D\uAC04\uC774\uC9C0\uB9CC \uB9E4\uD134 \uC9C8\uBCD1 \uC218\uCE58\uB97C
+        \uB0AE\uCDA5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 15
+      Production_Value: 4
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 2
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 11
+      Version: 2
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uAC10\uB3C5\uBD80"
+      Contents: " \uD1B5\uC81C\uB418\uC9C0 \uC54A\uC740 \uB178\uB3D9\uC790\uB4E4\uC774
+        \uC77C\uC73C\uD0A4\uB294 \uBA87 \uAC00\uC9C0 \uC0AC\uC18C\uD55C \uC0AC\uAC74\uC744
+        \uACAA\uC740 \uD6C4\uC5D0, \uC9C0\uBD80\uC7A5\uB2D8\uC758 \uBA85\uB839\uC5D0
+        \uB530\uB77C \uB178\uB3D9\uC790 \uC9D1\uB2E8\uC744 \uBD84\uB958\uD558\uACE0
+        \uAC10\uB3C5\uD560 \uAC10\uB3C5\uBD80\uAC00 \uC138\uC6CC\uC84C\uC2B5\uB2C8\uB2E4.
+        \uAC10\uB3C5\uBD80\uC5D0\uC11C \uD30C\uACAC\uD558\uB294 \uC791\uC5C5 \uAC10\uB3C5\uC740
+        \uB178\uB3D9\uC790\uB4E4\uC5D0\uAC8C \uC5B8\uC81C\uB098 \uC0AC\uBA85\uC758
+        \uC911\uC694\uC131\uC744 \uC124\uD30C\uD558\uBA70 \uC5C9\uB6B1\uD55C \uC9D3\uC744
+        \uD558\uC9C0 \uC54A\uAC8C \uCCA0\uC800\uD788 \uAD00\uB9AC\uD569\uB2C8\uB2E4.
+        \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744 \uC218 \uC788\uC73C\uBA70
+        \uBD88\uB9CC\uC774 \uB0AE\uC544\uC9C0\uACE0 \uD76C\uB9DD, \uC758\uC9C0\uAC00
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4. \uACFC\uACA9 \uD589\uB3D9 \uC774\uBCA4\uD2B8\uB97C
+        \uB9C9\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 11
+      Version: 3
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC911\uC559 \uC9C0\uB3C4\uBD80"
+      Contents: " \uAC10\uB3C5 \uC9D1\uB2E8\uB9CC\uC73C\uB85C\uB294 \uB178\uB3D9\uC790\uC758
+        \uD6A8\uC728\uC801\uC778 \uD1B5\uC81C\uAC00 \uD798\uB4E4\uBA70 \uB3C4\uB9AC\uC5B4
+        \uB178\uB3D9\uC790\uC640 \uAC10\uB3C5 \uAC04\uC758 \u2018\uBE44\uB9AC\u2019\uAC00
+        \uBC1C\uACAC\uB418\uC790 \uD604\uC7A5\uC5D0 \uC5BD\uB9E4\uC774\uC9C0 \uC54A\uB294
+        \uAC10\uC2DC \uAE30\uAD6C\uC758 \uD544\uC694\uC131\uC774 \uC0DD\uACBC\uC73C\uBA70
+        \uC774\uC5D0 \uC9C0\uBD80\uC7A5\uB2D8\uC744 \uC911\uC2EC\uC73C\uB85C \uD558\uB294
+        \uC911\uC559 \uC9C0\uB3C4\uBD80\uAC00 \uAC74\uC124\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uC774\uC81C \uB3C4\uB07C\uB208\uC744 \uD55C \uAC10\uC2DC\uC6D0\uB4E4\uC774
+        \uAC10\uB3C5\uACFC \uB178\uB3D9\uC790 \uBAA8\uB450\uB97C \uC9C0\uCF1C\uBCF4\uACE0
+        \uC788\uC2B5\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744
+        \uC218 \uC788\uC73C\uBA70 \uBD88\uB9CC, \uD76C\uB9DD, \uC758\uC9C0\uAC00
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4. \uBB3C\uC790 \uB3C4\uB09C \uC774\uBCA4\uD2B8\uB97C
+        \uB9C9\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 11
+      Version: 4
+      Image: {fileID: 21300000, guid: 658ba628fcddb6f46b19196987909522, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uAE30\uB150\uBE44"
+      Contents: " \uC0C8\uB85C\uC6B4 \uC138\uC0C1\uC744 \uD574\uCCD0\uB098\uAC00\uB294
+        \uC6B0\uB9AC\uB294 \uC0AC\uBA85\uC73C\uB85C \uB618\uB618 \uBB49\uCE5C \uC2E0\uBB38\uBA85\uC758
+        \uAC1C\uCC99\uC790\uB4E4\uC785\uB2C8\uB2E4. \uC774 \uC624\uC5FC\uC774 \uC5B8\uC820\uAC00
+        \uAC77\uD788\uBA74 \uC0DD\uBA85\uC740 \uB2E4\uC2DC\uAE08 \uAF43 \uD544 \uAC83\uC785\uB2C8\uB2E4.
+        \uADF8 \uD6C4\uC190\uB4E4\uC774 \uC9C0\uBD80\uC7A5\uB2D8\uC758 \uC5C5\uC801\uC774
+        \uC5BC\uB9C8\uB098 \uB300\uB2E8\uD55C\uC9C0 \uBCFC \uC218 \uC788\uAC8C \uCEE4\uB2E4\uB780
+        \uD0D1\uC744 \uC9C0\uC5B4\uC57C \uD569\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC
+        \uC9C0\uC744 \uC218 \uC788\uC73C\uBA70 \uD574\uCCB4\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uC9D3\uB294 \uC21C\uAC04 \uD76C\uB9DD\uACFC \uC758\uC9C0\uC758 \uCD5C\uB300\uCE58\uAC00
+        \uB192\uC544\uC9C0\uBA70 \uBD88\uB9CC\uC774 \uC601\uAD6C\uC801\uC73C\uB85C
+        \uB0AE\uC544\uC9C0\uACE0 \uD76C\uB9DD\uC774 \uC601\uAD6C\uC801\uC73C\uB85C
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 8
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 12
+      Version: 1
+      Image: {fileID: 21300000, guid: 26ec68c89a20d6a419fa74149684aada, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uC870\uB9BD\uC2DD \uC804\uD30C \uD0D1"
+      Contents: " \uC870\uC545\uD55C \uBD80\uD488\uC774 \uC090\uAC71\uB300\uBA70
+        \uBD88\uC548\uD55C \uC804\uB825\uB9DD\uC774 \uC218\uC2DC\uB85C \uC815\uC804\uC744
+        \uC77C\uC73C\uD0A4\uB294 \uC791\uC740 \uC804\uD30C \uD0D1\uC785\uB2C8\uB2E4.
+        \uB3C4\uC800\uD788 \uC2E0\uB8B0\uAC00 \uAC00\uC9C0 \uC54A\uC9C0\uB9CC \uC678\uBD80\uB85C
+        \uB098\uAC04 \uD0D0\uC0AC\uB300\uC640 \uAD50\uC2E0\uD558\uAE30 \uC704\uD574\uC120
+        \uC774\uAC83\uC5D0 \uC758\uC9C0\uD560 \uC218\uBC16\uC5D0 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uD0D0\uC0AC\uB300\uC640 \uC544\uC8FC \uAC04\uB2E8\uD55C \uD1B5\uC2E0\uB9CC
+        \uAC00\uB2A5\uD569\uB2C8\uB2E4. \uD0D0\uC0AC\uB300\uB294 \uBA40\uB9AC \uB098\uAC00\uC9C0
+        \uBABB\uD558\uACE0 \uADFC\uCC98\uB9CC \uD0D0\uC0C9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 0e000000
+      Upkeep_Value:
+      - 5
+      BuildCost_Type: 0000000001000000
+      BuildCost_Value:
+      - 30
+      - 30
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 12
+      Version: 2
+      Image: {fileID: 21300000, guid: 05e7cddb6f7dfc7479f51a3deaa643d0, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uD0D0\uCE21 \uC5F4\uAE30\uAD6C"
+      Contents: " \uC624\uC5FC \uC548\uAC1C \uC18D\uC5D0\uC11C \uC6C0\uC9C1\uC774\uB294
+        \uBBF8\uD655\uC778 \uAD34\uC218\uB4E4\uC774 \uC804\uD30C\uC5D0 \uAC04\uC12D\uC744
+        \uC77C\uC73C\uD0A8\uB2E4\uB294 \uC0AC\uC2E4\uC744 \uC54C\uC544\uB0B8 \uAE30\uC220\uC790\uB4E4\uC740
+        \uC5F4\uAE30\uAD6C\uC5D0 \uC804\uD30C \uC1A1\uC218\uC2E0\uAE30\uB97C \uBD80\uCC29\uD574
+        \uB744\uC6E0\uC2B5\uB2C8\uB2E4. \uBA87 \uBC88\uC758 \uC2E4\uD328 \uB05D\uC5D0
+        \uBE44\uAD50\uC801 \uC815\uD655\uD55C \uAD50\uC2E0\uC774 \uAC00\uB2A5\uD55C
+        \uB192\uC774\uB97C \uCC3E\uC544\uB0B4\uB294\uB370 \uC131\uACF5\uD588\uC2B5\uB2C8\uB2E4.
+        \uD0D0\uC0AC\uB300\uC640 \uAC04\uB2E8\uD55C \uD1B5\uC2E0\uC774 \uAC00\uB2A5\uD569\uB2C8\uB2E4.
+        \uBB34\uC7A5\uD55C \uD0D0\uC0AC\uB300\uB294 \uB354 \uB9CE\uC740 \uC815\uBCF4\uB97C
+        \uC5BB\uAE30 \uC704\uD574 \uBCF4\uB2E4 \uBA3C \uAC70\uB9AC\uB97C \uC774\uB3D9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 12
+      Version: 3
+      Image: {fileID: 21300000, guid: 17ba4659ef515cd4481cc87a28638f6f, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: " \uD0D0\uC0AC\uB300 \uAE30\uC9C0"
+      Contents: " \uB9CE\uC740 \uC0DD\uBA85\uC774 \uC624\uC5FC \uC548\uAC1C \uC18D\uC5D0\uC11C
+        \uC8FD\uC5C8\uC9C0\uB9CC \uADF8\uB807\uB2E4\uACE0 \uBAA8\uB4E0 \uAD34\uC218\uB4E4\uC774
+        \uC8FD\uC740 \uAC83\uC740 \uC544\uB2C8\uC5C8\uC2B5\uB2C8\uB2E4. \uC138\uC0C1\uC740
+        \uC5EC\uC804\uD788 \uC704\uD5D8\uD558\uBA70 \uD0D0\uC0AC\uB300\uB294 \uC5EC\uB290
+        \uBAA8\uD5D8\uAC00\uCC98\uB7FC \uB4E0\uB4E0\uD55C \uBB34\uC7A5\uC744 \uD560
+        \uD544\uC694\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uD0D0\uC0AC\uB300 \uAE30\uC9C0\uB294
+        \uBA3C \uD0D0\uD5D8\uC744 \uB098\uAC04 \uC774\uB4E4\uC758 \uC704\uCE58\uB97C
+        \uC218\uC2DC\uB85C \uD30C\uC545\uD558\uBA70 \uC81C\uB54C \uD544\uC694\uD55C
+        \uBB3C\uC790\uB97C \uBCF4\uAE09\uD560 \uC218 \uC788\uAC8C \uB9CC\uBC18\uC758
+        \uC900\uBE44\uB97C \uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uD0D0\uC0AC\uB300\uC640
+        \uC790\uC138\uD55C \uD1B5\uC2E0\uC774 \uAC00\uB2A5\uD569\uB2C8\uB2E4. \uD0D0\uC0AC\uB300\uB294
+        \uC644\uC804 \uBB34\uC7A5\uD588\uC73C\uBA70 \uC0AC\uC2E4\uC0C1 \uAC70\uB9AC\uC758
+        \uC81C\uC57D \uC5C6\uC774 \uBCF8\uACA9\uC801\uC73C\uB85C \uD0D0\uC0AC\uB97C
+        \uB5A0\uB0A0 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 13
+      Version: 1
+      Image: {fileID: 21300000, guid: e04ec47aca7c949439d121ea27fd1e5c, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC5F0\uAD6C\uC18C"
+      Contents: " \uC2A4\uD2F8 \uC6E8\uC77C\uC5D0 \uBD80\uCC29\uB41C \uD669\uAE08
+        \uBE44\uC11D\uC774 \uBBF8\uC644\uC131\uC778 \uB355\uBD84\uC5D0 \uC0C1\uB2F9\uB7C9\uC758
+        \uAE30\uC220\uC774 \uC720\uC2E4\uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uC2EC\uC9C0\uC5B4
+        \uC790\uAE30 \uAC1C\uB7C9 \uAE30\uB2A5\uB9C8\uC800 \uB9DD\uAC00\uC9C4 \uD0D3\uC5D0
+        \uD669\uAE08 \uBE44\uC11D\uC740 \uADF8\uC800 \uC131\uB2A5 \uC88B\uC740 \uB3D9\uB825\uC6D0
+        \uACB8 \uACC4\uC0B0\uAE30\uAC00 \uB418\uC5B4\uBC84\uB838\uC2B5\uB2C8\uB2E4.
+        \uC774\uB807\uAC8C \uB41C \uC774\uC0C1 \uAE30\uC220\uC790\uB4E4\uC774 \uC9C1\uC811
+        \uD544\uC694\uD55C \uAE30\uC220\uC774\uB098 \uAC74\uBB3C\uC758 \uC124\uACC4\uB3C4\uB97C
+        \uB9CC\uB4DC\uB294 \uC218\uBC16\uC5D0 \uC5C6\uC2B5\uB2C8\uB2E4. \uD669\uAE08
+        \uBE44\uC11D\uC758 \uAE30\uB2A5\uC744 \uBCF5\uAD6C\uD558\uBA74 \uD2B9\uD5C8
+        \uAE30\uC220\uC744 \uBCF5\uC6D0\uD560 \uC218\uB3C4 \uC788\uC744 \uAC83\uC785\uB2C8\uB2E4.
+        \uB9E4 \uD134 \uAE30\uC220 \uD3EC\uC778\uD2B8\uB97C \uD68D\uB4DD\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 16
+      Production_Value: 3
+      Upkeep_Type: 0e000000
+      Upkeep_Value:
+      - 8
+      BuildCost_Type: 0800000000000000
+      BuildCost_Value:
+      - 40
+      - 20
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: -4
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 13
+      Version: 2
+      Image: {fileID: 21300000, guid: 20fe2ebb3f2f104429097caec88cfa32, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uB77C\uC2A4\uD0C4\uC2DD \uC5F0\uAD6C\uC18C"
+      Contents: " \uB77C\uC2A4\uD0C4 \uC8FC\uC2DD\uD68C\uC0AC\uC5D0\uC11C \uB9CC\uB4E0
+        \uC801\uC751\uC2DD \uAC1C\uC870\uBD80\uC2A4 (Adaptive Remodeling Booth, \uC774\uD558
+        \uAC1C\uC870\uC2E4)\uC758 \uC124\uACC4\uB3C4\uB97C \uBCF5\uC6D0\uD55C \uB355\uBD84\uC5D0
+        \uC5F0\uAD6C\uC18C\uC5D0 \uAC1C\uC870\uC2E4\uC744 \uBD80\uCC29\uD560 \uC218
+        \uC788\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uBCF8\uB514 \uB9CC\uB4E4\uC5B4\uC9C4
+        \uBB3C\uAC74\uC744 \uD604\uC7A5 \uC0C1\uD669\uC5D0 \uB9DE\uAC8C \uAC1C\uC870\uD558\uB294
+        \uC7A5\uCE58\uB2E4\uBCF4\uB2C8 \uD669\uAE08 \uBE44\uC11D\uC758 \uC5F0\uC0B0\uB2A5\uB825\uC744
+        \uB04C\uC5B4\uC62C\uB9AC\uB294 \uAC8C \uD55C\uACC4\uC9C0\uB9CC \uC774\uC815\uB3C4\uB9CC
+        \uD574\uB3C4 \uCDA9\uBD84\uD569\uB2C8\uB2E4. \uB9E4 \uD134 \uB9CE\uC740 \uC591\uC758
+        \uAE30\uC220 \uD3EC\uC778\uD2B8\uB97C \uD68D\uB4DD\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 3
+      Workable_Ontile: 0
+      Production_Type: 17
+      Production_Value: 8
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 6
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 4
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 14
+      Version: 1
+      Image: {fileID: 21300000, guid: f990a70db8d2b8745bf20e5e99b22bcf, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC2A4\uD2F8 \uC6E8\uC77C \uACF5\uCC3D"
+      Contents: " \uC6B0\uB9AC\uAC00 \uD0C0\uACE0 \uB2E4\uB2C8\uB294 \uC774 \uC2A4\uD2F8
+        \uC6E8\uC77C\uC740 \uBBF8\uC644\uC131\uC5D0 \uD30C\uC190\uC774 \uC2EC\uD55C
+        \uBCF4\uAE09\uC6A9 \uC774\uB3D9\uC694\uC0C8\uC785\uB2C8\uB2E4. \uBB38\uC81C\uAC00
+        \uB9CE\uC740 \uD568\uC120\uC774\uC9C0\uB9CC \uB300\uCCB4\uD560 \uAE30\uACC4\uB97C
+        \uAD6C\uD560 \uC218\uB3C4 \uB9CC\uB4E4 \uC218\uB3C4 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uB530\uB77C\uC11C \uC9C0\uC18D\uC801\uC778 \uC720\uC9C0\uBCF4\uC218\uC640
+        \uD604\uC7AC \uC0C1\uD669\uC5D0 \uB9DE\uCD98 \uAC1C\uC870\uAC00 \uD544\uC218\uC801\uC774\uBA70
+        \uC774\uB97C \uC704\uD574 \uC2A4\uD2F8 \uC6E8\uC77C\uC5D0 \uD0D1\uC7AC\uB41C
+        \uB300\uBD80\uBD84\uC758 \uC7A5\uBE44\uAC00 \uD22C\uC785\uB418\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC2A4\uD2F8 \uC6E8\uC77C\uC744 \uC218\uB9AC\uD558\uAE30 \uC704\uD574 \uC801\uC5B4\uB3C4
+        \uD558\uB098 \uC774\uC0C1\uC758 \uACF5\uCC3D\uC774 \uD544\uC694\uD569\uB2C8\uB2E4.
+        \uB9E4 \uD134 \uC218\uB9AC\uB098 \uC99D\uCD95(\uAC1C\uC870)\uB97C \uD558\uAE30
+        \uC704\uD55C \uC791\uC5C5 \uD3EC\uC778\uD2B8\uB97C \uD68D\uB4DD\uD569\uB2C8\uB2E4.
+        \uB610\uD55C \uC560\uB4DC\uC628\uC744 \uBD80\uCC29\uD558\uC5EC \uACE8\uB514\uC628
+        \uC5D4\uC9C4\uC744 \uC870\uB9BD\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 18
+      Production_Value: 8
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 3
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 14
+      Version: 2
+      Image: {fileID: 21300000, guid: 3cbaed6a53d578f478d89937fbff89d2, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uD558\uC5ED\uC7A5"
+      Contents: " \uC2A4\uD2F8 \uC6E8\uC77C\uC744 \uACE0\uCE58\uB294 \uAC83\uC740
+        \uACF5\uCC3D\uC5D0\uC11C \uD574\uACB0\uD558\uC9C0\uB9CC \uB2E4\uC74C \uC9C0\uC5ED\uC73C\uB85C
+        \uAC74\uB108\uAC08 \uB3D9\uC548 \uC0AC\uC6A9\uD560 \uBB3C\uC790\uB97C \uC2E3\uB294
+        \uAC83\uC740 \uD558\uC5ED\uC7A5\uC5D0\uC11C \uCC98\uB9AC\uD569\uB2C8\uB2E4.
+        \uB85C\uC774\uB4DC \uC5D4\uC9C4\uC5D0 \uC4F0\uC774\uB294 \uACE8\uB514\uC628\uC740
+        \uBB3C\uB860\uC774\uBA70 \uC815\uB9D0 \uC5C4\uCCAD\uB09C \uC591\uC758 \uC5F0\uB8CC\uC640
+        \uC2DD\uB7C9 \uADF8\uB9AC\uACE0 \uAE30\uBC18\uC744 \uB2E4\uC9C0\uB294\uB370
+        \uC4F0\uC77C \uC57D\uAC04\uC758 \uC790\uC6D0\uC774 \uACC4\uD68D\uC5D0 \uB9DE\uCDB0
+        \uCC28\uACE1\uCC28\uACE1 \uC313\uC785\uB2C8\uB2E4. \uC2A4\uD2F8 \uC6E8\uC77C\uC5D0
+        \uC790\uC6D0\uACFC \uC0DD\uC874\uC790\uB97C \uC2E3\uAE30 \uC704\uD574 \uC801\uC5B4\uB3C4
+        \uD558\uB098 \uC774\uC0C1\uC758 \uD558\uC5ED\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4.
+        \uB458 \uC774\uC0C1\uC758 \uD558\uC5ED\uC7A5\uC774 \uC788\uC744 \uACBD\uC6B0
+        \uCCA0\uC218 \uC791\uC5C5\uC758 \uD134 \uC218\uAC00 \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 2
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 14
+      Version: 3
+      Image: {fileID: 21300000, guid: 3cbaed6a53d578f478d89937fbff89d2, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uB85C\uC774\uB4DC \uC5D4\uC9C4 \uC791\uC5C5\uC7A5"
+      Contents: " \uD669\uAE08 \uBE44\uC11D\uC758 \uC218\uB9AC\uB97C \uD2C8\uD2C8\uC774
+        \uC774\uC5B4\uAC04 \uB05D\uC5D0 \uAC04\uC2E0\uD788 \uBCF5\uAD6C\uD55C \uAE30\uC220\uC758
+        \uACB0\uC815\uCCB4\uC785\uB2C8\uB2E4. \uD14C\uB77C\uC758 \uC5D0\uACE0 \uC5D4\uC9C4\uC5D0
+        \uB300\uD56D\uD558\uC5EC \uB85C\uC774\uB4DC \uBCF8\uC0B0\uC5D0\uC11C \uAC1C\uBC1C\uD55C
+        \uB85C\uC774\uB4DC \uC5D4\uC9C4\uC740 \uACE8\uB514\uC628\uC744 \uC5F0\uB8CC\uB85C
+        \uC0AC\uC6A9\uD558\uB294 \uC720\uC774\uD55C \uB3D9\uB825\uC6D0\uC785\uB2C8\uB2E4.
+        \uC5D4\uC9C4\uC740 \uC628\uAC16 \uACF3\uC5D0 \uC4F8 \uC218 \uC788\uC9C0\uB9CC
+        \uC9C0\uAE08\uC740 \uC2A4\uD2F8 \uC6E8\uC77C\uC5D0 \uC804\uB7C9 \uD22C\uC785\uD574\uC57C
+        \uD560 \uAC83\uC785\uB2C8\uB2E4. \uC791\uC5C5, \uAE30\uC220 \uD3EC\uC778\uD2B8\uC640
+        \uB300\uB7C9\uC758 \uC790\uC6D0\uC744 \uC18C\uBAA8\uD574 \uB85C\uC774\uB4DC
+        \uC5D4\uC9C4\uC744 \uB9CC\uB4E4 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 5
+      Workable_Ontile: 0
+      Production_Type: 19
+      Production_Value: 1
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 5
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 15
+      Version: 1
+      Image: {fileID: 21300000, guid: cbd575a7ee2e6cf4e838a4f4774fae41, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uBCC0\uC804\uC18C"
+      Contents: " \uB3C4\uC2DC\uB97C \uAC74\uC124\uD558\uB294\uB370 \uD544\uC218\uC801\uC778
+        \uC790\uC6D0\uC774 \uCCA0\uC774\uB77C\uBA74 \uB3C4\uC2DC\uB97C \uC720\uC9C0\uD558\uB294\uB370
+        \uD544\uC218\uC801\uC778 \uC790\uC6D0\uC740 \uBC14\uB85C \uC804\uAE30\uC785\uB2C8\uB2E4.
+        \uBCC0\uC804\uC18C\uB294 \uADFC\uCC98\uC5D0 \uC804\uAE30\uB97C \uD544\uC694\uB85C
+        \uD558\uB294 \uBAA8\uB4E0 \uAC74\uBB3C\uC5D0 \uACE0\uB8E8 \uC804\uAE30\uB97C
+        \uACF5\uAE09\uD574\uC8FC\uC9C0\uB9CC \uAC01\uAC01\uC758 \uBCC0\uC804\uC18C\uB294
+        \uB530\uB85C \uC5F0\uB8CC\uB97C \uC18C\uBAA8\uD558\uBBC0\uB85C \uBCC0\uC804\uC18C\uB97C
+        \uC9C0\uC744 \uB550 \uACC4\uD68D\uC744 \uC9E4 \uD544\uC694\uAC00 \uC788\uC2B5\uB2C8\uB2E4.
+        \uADFC\uCC98 \uAC74\uBB3C\uC5D0 \uC804\uAE30\uB97C \uACF5\uAE09\uD569\uB2C8\uB2E4."
+      ShortContents: " \uC8FC\uBCC0 \uD0C0\uC77C\uC5D0 \uC804\uB825\uB9DD\uC744 \uC5F0\uACB0\uD558\uB294
+        \uAC74\uBB3C\uC785\uB2C8\uB2E4. \uB300\uBD80\uBD84\uC758 \uAC74\uBB3C\uC774
+        \uC804\uB825\uB9DD\uC5D0\uC11C \uC804\uB825\uC744 \uACF5\uAE09 \uBC1B\uC544\uC57C\uD558\uBBC0\uB85C 
+        \uC704\uCE58 \uC120\uC815\uC5D0 \uC8FC\uC758\uD574\uC57C\uD569\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: -1
+      Production_Value: 0
+      Upkeep_Type: 03000000
+      Upkeep_Value:
+      - 10
+      BuildCost_Type: 00000000
+      BuildCost_Value:
+      - 50
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 15
+      Version: 2
+      Image: {fileID: 21300000, guid: 337259a967c3cdc4eb2ad65ae35a0fd3, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uD654\uB825 \uBC1C\uC804\uAE30"
+      Contents: " \uC11D\uD0C4, \uBC1C\uD654\uC11D\uC73C\uB85C \uC791\uB3D9\uD558\uB294
+        \uC774 \uD06C\uACE0 \uB192\uC740 \uBC1C\uC804\uAE30\uB294 \uBB3C\uC744 \uB053\uC5EC
+        \uB098\uC624\uB294 \uC99D\uAE30 \uC555\uB825\uC73C\uB85C \uD130\uBE48\uC744
+        \uB3CC\uB824 \uC804\uAE30\uB97C \uC0DD\uC0B0\uD558\uB294 \uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC99D\uAE30 \uC7AC\uC0AC\uC6A9\uC774 \uBD88\uAC00\uB2A5\uD55C \uAD49\uC7A5\uD788
+        \uB4A4\uB5A8\uC5B4\uC9C4 \uBC29\uC2DD\uC774\uC9C0\uB9CC \uAE09\uD558\uAC8C
+        \uC804\uAE30\uB97C \uB9CC\uB4E4 \uB550 \uC774 \uBC29\uC2DD\uC774 \uCD5C\uACE0\uC785\uB2C8\uB2E4.
+        \uC801\uC740 \uC591\uC758 \uC804\uAE30\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: " \uAE30\uCD08\uC801\uC778 \uBC1C\uC804\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uC804\uAE30\uB97C \uC0DD\uC0B0\uD558\uC9C0\uB9CC \uC8FC\uBCC0\uC5D0 \uC804\uB825\uB9DD\uC744
+        \uC0DD\uC131\uD558\uC9C0\uB294 \uC54A\uC2B5\uB2C8\uB2E4. \uAC00\uB2A5\uD55C
+        \uB3C4\uC2DC \uC678\uACFD\uC5D0 \uC9D3\uB294 \uAC83\uC744 \uCD94\uCC9C\uD569\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 14
+      Production_Value: 10
+      Upkeep_Type: 03000000
+      Upkeep_Value:
+      - 15
+      BuildCost_Type: 00000000
+      BuildCost_Value:
+      - 32
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 15
+      Version: 3
+      Image: {fileID: 21300000, guid: 346e8850116fc4c42be974c2e27d2790, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC99D\uAE30\uC2DD \uBC1C\uC804\uAE30"
+      Contents: " \uD654\uB825 \uBC1C\uC804\uAE30\uB85C\uB3C4 \uC804\uAE30 \uC0DD\uC0B0\uC774
+        \uAC10\uB2F9\uC774 \uC548 \uB41C\uB2E4\uBA74 \uAC1C\uCC99\uC9C0\uC5D0\uC11C
+        \uD754\uD788 \uC4F0\uB294 \uC99D\uAE30\uC2DD \uBC1C\uC804\uAE30\uB97C \uC4F8
+        \uB54C\uAC00 \uB41C \uAC81\uB2C8\uB2E4. \uAE30\uC874 \uD654\uB825 \uBC1C\uC804\uAE30\uC5D0
+        \uC57D\uAC04\uC758 \uC124\uACC4 \uBCC0\uACBD\uC744 \uAC70\uCE58\uBA74 \uACE0\uC555
+        \uC99D\uAE30\uB85C \uD130\uBE48\uC744 \uD6A8\uC728\uC801\uC73C\uB85C \uB3CC\uB9B4
+        \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC804\uAE30\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 14
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 15
+      Version: 4
+      Image: {fileID: 21300000, guid: 346e8850116fc4c42be974c2e27d2790, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uACE8\uB514\uC628 \uBC1C\uC804\uAE30"
+      Contents: " \uC99D\uAE30\uC2DD \uBC1C\uC804\uAE30\uB9C8\uC800 \uB3C4\uC2DC\uC758
+        \uC804\uAE30 \uC218\uC694\uB97C \uB9CC\uC871\uC2DC\uD0A4\uC9C0 \uBABB\uD55C\uB2E4\uB294
+        \uC0AC\uC2E4\uC5D0 \uCDA9\uACA9\uC744 \uBC1B\uC740 \uAE30\uC220\uC790\uB4E4\uC740
+        \uACB0\uAD6D \uACE8\uB514\uC628\uC73C\uB85C \uB3CC\uC544\uAC00\uB294 \uBC1C\uC804\uAE30\uB97C
+        \uAC1C\uBC1C\uD588\uC2B5\uB2C8\uB2E4. \uB85C\uC774\uB4DC \uC5D4\uC9C4\uC744
+        \uBC1C\uC804\uC6A9\uC73C\uB85C \uC7AC\uC124\uACC4\uD55C \uC774 \uC2DC\uC124\uC740
+        \uACE8\uB514\uC628\uC758 \uC5C4\uCCAD\uB09C \uD654\uB825\uC744 \uAC10\uB2F9\uD558\uAE30
+        \uC704\uD574 \uD569\uAE08\uC744 \uC544\uB08C\uC5C6\uC774 \uC0AC\uC6A9\uD588\uC2B5\uB2C8\uB2E4.
+        \uAD49\uC7A5\uD788 \uBE44\uC2FC \uC2DC\uC124\uC774\uC9C0\uB9CC \uACB0\uCF54
+        \uC544\uAE5D\uC9C0 \uC54A\uC740 \uD22C\uC790\uC785\uB2C8\uB2E4. \uB9CE\uC740
+        \uC591\uC758 \uC804\uAE30\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: ' '
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 14
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 5
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 16
+      Version: 1
+      Image: {fileID: 21300000, guid: bb3b0ebfc11bb294a9e7b4aea55d3a19, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC99D\uAE30 \uB3D4"
+      Contents: " \uC911\uC7A5\uBE44\uB97C \uB3CC\uB9AC\uB294 \uC2DC\uC124\uC740
+        \uC73C\uB808 \uC99D\uAE30\uB97C \uD544\uC694\uB85C \uD558\uAE30 \uB9C8\uB828\uC785\uB2C8\uB2E4.
+        \uC99D\uAE30 \uB3D4\uC740 \uC774\uB7EC\uD55C \uC2DC\uC124\uB4E4\uC774 \uC0AC\uC6A9\uD560
+        \uACE0\uC555 \uC99D\uAE30\uB97C \uAD00\uB9AC\uD558\uACE0 \uC788\uC73C\uBA70
+        \uADFC\uCC98\uC758 \uAC74\uBB3C\uC5D0 \uC99D\uAE30\uB97C \uACF5\uAE09\uD569\uB2C8\uB2E4.
+        \uAC01\uAC01\uC758 \uC99D\uAE30 \uB3D4\uC740 \uB530\uB85C \uC5F0\uB8CC\uB97C
+        \uC18C\uBAA8\uD558\uBBC0\uB85C \uC99D\uAE30 \uB3D4\uC744 \uC9C0\uC744 \uB550
+        \uACC4\uD68D\uC744 \uC9E4 \uD544\uC694\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uADFC\uCC98
+        \uAC74\uBB3C\uC5D0 \uC99D\uAE30\uB97C \uACF5\uAE09\uD569\uB2C8\uB2E4."
+      ShortContents: " \uC8FC\uBCC0 \uD0C0\uC77C\uC5D0 \uC99D\uAE30\uB9DD\uC744 \uC5F0\uACB0\uD558\uB294
+        \uAC74\uBB3C\uC785\uB2C8\uB2E4. \uC804\uB825\uB9DD \uB9CC\uD07C\uC740 \uC544\uB2C8\uC9C0\uB9CC
+        \uC99D\uAE30\uB9DD\uC744 \uD544\uC694\uB85C \uD558\uB294 \uAC74\uBB3C\uB3C4
+        \uB9CE\uAE30 \uB54C\uBB38\uC5D0 \uC704\uCE58 \uC120\uC815\uC5D0 \uC8FC\uC758\uD574\uC57C\uD569\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: -1
+      Production_Value: 0
+      Upkeep_Type: 0e00000003000000
+      Upkeep_Value:
+      - 10
+      - 15
+      BuildCost_Type: 00000000
+      BuildCost_Value:
+      - 32
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 1
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 16
+      Version: 2
+      Image: {fileID: 21300000, guid: 2da39e273e20e2749896558d10ac0a35, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uAD6C\uC2DD \uBCF4\uC77C\uB7EC"
+      Contents: " \uCC9C\uCC9C\uD788 \uAC00\uC5F4\uB418\uBA74\uC11C \uBB3C\uC744
+        \uB053\uC774\uB294 \uC774 \uBCF4\uC77C\uB7EC\uB294 \uB300\uD53C \uB2F9\uC2DC
+        \uC2A4\uD2F8 \uC6E8\uC77C\uC5D0 \uBD80\uCC29\uD558\uACE0 \uC788\uB358 \uC628\uC218
+        \uACF5\uAE09\uAE30\uC758 \uC77C\uBD80\uB97C \uB72F\uC5B4 \uACE0\uCE5C \uAC83\uC785\uB2C8\uB2E4.
+        \uB9C8\uAC1C\uC870\uB97C \uAC70\uCE5C \uB05D\uC5D0 \uAC04\uC2E0\uD788 \uACE0\uC555
+        \uC99D\uAE30\uB97C \uB9CC\uB4E4 \uC218 \uC788\uAC8C \uB41C \uC774 \uBCF4\uC77C\uB7EC\uB294
+        \uB9CE\uC740 \uC774\uB4E4\uC774 \uBD88\uC548\uD55C \uB208\uBE5B\uC73C\uB85C
+        \uCCD0\uB2E4\uBCF4\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uC801\uC740 \uC591\uC758
+        \uC99D\uAE30\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 15
+      Production_Value: 10
+      Upkeep_Type: 03000000
+      Upkeep_Value:
+      - 20
+      BuildCost_Type: 00000000
+      BuildCost_Value:
+      - 32
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 16
+      Version: 3
+      Image: {fileID: 21300000, guid: 763e70384a39aa94194747473a29d159, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uACE0\uC555 \uBCF4\uC77C\uB7EC"
+      Contents: " \uAE30\uC220\uC744 \uC5B4\uB290 \uC815\uB3C4 \uBCF5\uAD6C\uD55C
+        \uB355\uBD84\uC5D0 \uACE0\uC555 \uC99D\uAE30\uB97C \uC548\uC804\uD558\uAC8C
+        \uC0DD\uC0B0\uD560 \uC218 \uC788\uB294 \uBCF4\uC77C\uB7EC\uB97C \uB9CC\uB4E4
+        \uC218 \uC788\uC5C8\uC2B5\uB2C8\uB2E4. \uC2EC\uC0AC\uB97C \uB4A4\uD2C0\uB9AC\uAC8C
+        \uD558\uB294 \uB9C8\uAC1C\uC870 \uBCF4\uC77C\uB7EC\uC758 \uCDE9\uCDE9 \uAC70\uB9AC\uB294
+        \uC18C\uB9AC\uC5D0\uC11C \uBC97\uC5B4\uB09C \uC0AC\uB78C\uB4E4\uC774 \uC548\uB3C4\uD588\uC9C0\uB9CC
+        \uC774 \uBCF4\uC77C\uB7EC\uB97C \uC720\uC9C0\uD558\uB294\uB370 \uB4E4\uC5B4\uAC00\uB294
+        \uC5F0\uB8CC\uC758 \uC591\uC744 \uD655\uC778\uD558\uC790 \uC774\uB0B4 \uB2E4\uC2DC
+        \uC2EC\uC0AC\uAC00 \uB4A4\uD2C0\uB9AC\uAE30 \uC2DC\uC791\uD588\uC2B5\uB2C8\uB2E4.
+        \uC99D\uAE30\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 15
+      Production_Value: 18
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 16
+      Version: 4
+      Image: {fileID: 21300000, guid: 763e70384a39aa94194747473a29d159, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uB85C\uC774\uB4DC\uC2DD \uC99D\uAE30 \uD0D1"
+      Contents: " \uC815\uCC29\uC9C0\uC5D0\uC11C \uD754\uD788 \uC4F0\uB294 \uBC14\uB85C
+        \uADF8 \uC99D\uAE30\uD0D1\uC785\uB2C8\uB2E4. \uBB3C\uC744 \uBD93\uC790\uB9C8\uC790
+        \uAC70\uC758 \uBC14\uB85C \uC99D\uAE30\uB85C \uB9CC\uB4E4\uC5B4\uBC84\uB9AC\uB294
+        \uAC15\uB825\uD55C \uBCF4\uC77C\uB7EC, \uAC70\uAE30\uC11C \uBFDC\uC5B4\uC838
+        \uB098\uC624\uB294 \uB9CE\uACE0 \uB9CE\uC740 \uC99D\uAE30! \uC5EC\uAE30\uC11C
+        \uB098\uC624\uB294 \uC99D\uAE30\uB294 \uCD08 \uACE0\uC555\uB825\uC73C\uB85C
+        \uC911\uC7A5\uBE44\uB97C \uC274 \uC0C8 \uC5C6\uC774 \uB3CC\uB9B4 \uC218 \uC788\uC9C0\uB9CC
+        \uADF8\uB9CC\uD55C \uC555\uB825\uC744 \uACAC\uB514\uAE30 \uC704\uD574 \uD569\uAE08\uD310\uC744
+        \uC218\uC2DC\uB85C \uAC08\uC544 \uB07C\uC6B0\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uADF8\uB798\uB3C4 \uC0C1\uAD00\uC5C6\uC2B5\uB2C8\uB2E4. \uC99D\uAE30\uB97C
+        \uC5BB\uC744 \uC218\uB9CC \uC788\uB2E4\uBA74\uC694. \uB9CE\uC740 \uC591\uC758
+        \uC99D\uAE30\uB97C \uC0DD\uC0B0\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 15
+      Production_Value: 32
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 5
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 2
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 17
+      Version: 1
+      Image: {fileID: 21300000, guid: a7c9e48470b5fa84bb10e20331839d8c, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC7AC\uCC98\uB9AC \uC2DC\uC124"
+      Contents: " \uC7AC\uB09C \uC0DD\uC874 \uB9E4\uB274\uC5BC\uC5D0\uB294 \uD55C\uC815\uB41C
+        \uC790\uC6D0\uC774 \uC8FC\uC5B4\uC9C0\uAC70\uB098 \uC18C\uBAA8\uB7C9\uC744
+        \uAC10\uB2F9\uD560 \uC218 \uC5C6\uC744 \uACBD\uC6B0 \uC7AC\uD65C\uC6A9\uC744
+        \uC801\uADF9 \uAD8C\uC7A5\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uB2E4\uB9CC
+        \uC18C\uBE44\uB97C \uAD8C\uC7A5\uD558\uB294 \uBCF8\uC0AC \uBC29\uCE68\uC5D0
+        \uC775\uC219\uD574\uC9C4 \uC0AC\uB78C\uB4E4\uC5D0\uAC8C \uC7AC\uD65C\uC6A9\uC740
+        \uC911\uACE0\uD488\uC744 \uC2E0\uD488\uC774\uB77C \uC18D\uC774\uB294 \uC77C\uC885\uC758
+        \uC0AC\uAE30\uB85C \uC0DD\uAC01\uD558\uACE0 \uC788\uC5B4 \uD56D\uC758\uAC00
+        \uC608\uC0C1\uB429\uB2C8\uB2E4. \uBD88\uB9CC\uC774 \uC0C1\uC2B9\uD558\uACE0
+        \uBD80\uD488, \uD569\uAE08 \uC18C\uBAA8\uB7C9\uC5D0 \uBE44\uB840\uD558\uC5EC
+        \uCCA0\uC744 \uD68D\uB4DD\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 5
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: 3
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 17
+      Version: 2
+      Image: {fileID: 21300000, guid: a7c9e48470b5fa84bb10e20331839d8c, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uBCF5\uD569 \uCC3D\uACE0"
+      Contents: " \uAC1C\uCC99\uC9C0\uC5D0\uC11C \uD754\uD788 \uC4F0\uB358 \uCC3D\uACE0\uB85C
+        \uAC01\uC885 \uC790\uC6D0\uB4E4\uC744 \uBD84\uB958\uC5D0 \uB9DE\uAC8C \uAD6C\uD68D\uC744
+        \uB098\uB220 \uC800\uC7A5\uD569\uB2C8\uB2E4. \uBAA8\uB4E0 \uC790\uC6D0\uC758
+        \uCD5C\uB300 \uC800\uC7A5\uB7C9\uC774 \uB298\uC5B4\uB0A9\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 17
+      Version: 3
+      Image: {fileID: 21300000, guid: a7c9e48470b5fa84bb10e20331839d8c, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC218\uD2B8\uB9E8 \uACF5\uC7A5"
+      Contents: " \uC911\uC0B0\uCE35 \uB178\uB3D9\uC790\uB77C\uBA74 \uD558\uB098\uC529
+        \uAC00\uC9C0\uACE0 \uC788\uB358 \uC790\uAC00\uC6A9 \uC678\uACE8\uACA9 \uC791\uC5C5\uBCF5\uC744
+        \uB9CC\uB4DC\uB294 \uACF5\uC7A5\uC785\uB2C8\uB2E4. \uC218\uD2B8\uB9E8\uC740
+        \uB85C\uC774\uB4DC \uBCF8\uC0AC\uAC00 \uC591\uBCF5\uC744 \uC785\uC740 \uB178\uB3D9\uC790\uB4E4\uC744
+        \uD0DC\uC6CC \uD64D\uBCF4\uD558\uB358 \uAC83\uC5D0 \uC720\uB798\uD55C \uC774\uB984\uC774
+        \uAD73\uD600\uC9C4 \uAC83\uC73C\uB85C, \uC774\uB984\uC774\uC57C \uC5B4\uCC0C\uB418\uC5C8\uB4E0
+        \uC218\uD2B8\uB9E8\uC740 \uC77C\uBC18 \uB178\uB3D9\uC790 8\uBA85\uB9CC\uD07C\uC758
+        \uB2A5\uB960\uC744 \uBCF4\uC5EC\uC8FC\uB294 \uC911\uC7A5\uBE44\uC600\uC2B5\uB2C8\uB2E4.
+        \uC815\uBC00 \uAC00\uACF5\uC774 \uD798\uB4E0 \uC9C0\uAE08\uC740 \uADF8\uB9CC\uD07C
+        \uC131\uB2A5 \uC88B\uC740 \uC218\uD2B8\uB9E8\uC744 \uB9CC\uB4E4 \uC218\uB294
+        \uC5C6\uC9C0\uB9CC \uADF8\uB798\uB3C4 \uB178\uB3D9\uB825 \uD655\uBCF4\uC5D0
+        \uD544\uC218\uC801\uC785\uB2C8\uB2E4. \uCD94\uAC00 \uC778\uB825\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4.
+        \uB3C4\uC2DC\uC5D0 \uC81C\uD55C\uB41C \uC22B\uC790\uB9CC\uD07C\uB9CC \uAC74\uC124\uD560
+        \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 3
+      Allow_Disaster: 1
+      Buff_Area_Size: 0
+      Addon_Slot: 3
+      limitNumber: 0
+      Need_Steam: 1
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 17
+      Version: 4
+      Image: {fileID: 21300000, guid: a7c9e48470b5fa84bb10e20331839d8c, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uACE8\uB514\uC628 \uBD84\uC0AC\uAE30"
+      Contents: " \uACE8\uB514\uC628\uC774 \uC624\uC5FC \uC548\uAC1C\uB97C \uC815\uD654\uD558\uB294
+        \uC815\uD655\uD55C \uC6D0\uB9AC\uB294 \uC54C \uC218 \uC5C6\uC9C0\uB9CC \uBD84\uBA85
+        \uD6A8\uACFC\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uACE8\uB514\uC628 \uBD84\uBC30\uAE30\uB294
+        \uC778\uCCB4\uC5D0 \uBB34\uD574\uD558\uAC8C \uD76C\uC11D\uD55C \uACE8\uB514\uC628\uC744
+        \uACF5\uAE30 \uC911\uC5D0 \uBFCC\uB9AC\uB294 \uC7A5\uCE58\uB85C \uACE8\uB514\uC628\uB9CC
+        \uCDA9\uBD84\uD558\uB2E4\uBA74 \uC8FC\uBCC0\uC758 \uC624\uC5FC\uC744 \uC5B4\uB290
+        \uC815\uB3C4 \uC815\uD654\uC2DC\uD0B5\uB2C8\uB2E4. \uB2E4\uB9CC \uD76C\uC11D\uC2DC\uD0A8
+        \uD0D3\uC5D0 \uACE8\uB514\uC628\uC758 \uB18D\uB3C4\uAC00 \uB0AE\uC544 \uC9D9\uC740
+        \uC624\uC5FC \uC18D\uC5D0\uC120 \uD070 \uD6A8\uACFC\uB97C \uBCF4\uC9C0 \uBABB\uD560
+        \uC218\uB3C4 \uC788\uC73C\uB2C8 \uACC4\uC18D \uAC1C\uB7C9\uD574\uC57C\uD569\uB2C8\uB2E4.
+        \uC8FC\uBCC0 \uD0C0\uC77C\uC758 \uC624\uC5FC \uC218\uCE58\uB97C \uB0AE\uCDA5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 999
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 18
+      Version: 1
+      Image: {fileID: 21300000, guid: 9815f4b3fb3c0634e81c68abc5ee1b52, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC784\uC2DC \uAC70\uC8FC\uC9C0"
+      Contents: " \uAE09\uD558\uAC8C \uCCD0\uB193\uC740 \uCC9C\uB9C9\uACFC \uAC00\uB9BC\uB9C9\uC774
+        \uBC14\uB78C \uC18D\uC5D0\uC11C \uC5C9\uC131\uD558\uAC8C \uB098\uBD80\uB08D\uB2C8\uB2E4.
+        \uC790\uC6D0 \uBCF4\uC720\uB7C9\uC774 \uB109\uB109\uC9C0 \uBABB\uD55C \uC0C1\uD669\uC5D0\uC120
+        \uC774\uAC83\uC774 \uCD5C\uC120\uC785\uB2C8\uB2E4\uB9CC \uC548\uC804\uC744
+        \uC704\uD574 \uCD5C\uB300\uD55C \uBE68\uB9AC \uADF8\uB7F4\uC2F8\uD55C \uAC70\uC8FC\uC9C0\uB97C
+        \uB9CC\uB4E4\uC5B4\uC57C\uD569\uB2C8\uB2E4. \uC57D\uAC04\uC758 \uC8FC\uAC70
+        \uAD6C\uC5ED\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4. \uBC29\uC7AC \uC218\uCE58\uAC00
+        \uB9E4\uC6B0 \uB0AE\uC2B5\uB2C8\uB2E4."
+      ShortContents: "\uAE30\uCD08\uC801\uC778 \uC8FC\uAC70\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uD14C\uD06C \uB370\uBAA8\uC5D0\uC11C\uB294 \uC8FC\uAC70 \uC81C\uACF5\uC774
+        \uB418\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 17
+      Production_Value: 20
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 08000000
+      BuildCost_Value:
+      - 15
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 1
+      Allow_Disaster: -15
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 18
+      Version: 2
+      Image: {fileID: 21300000, guid: 49c2f80995d68654db095ce235d50def, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC870\uB9BD\uC2DD \uC219\uC18C"
+      Contents: " \uB098\uBB34\uC640 \uCCA0\uADFC\uC73C\uB85C \uC27D\uAC8C \uC870\uB9BD\uD560
+        \uC218 \uC788\uB294 \uC219\uC18C\uB97C \uACE0\uC548\uD574\uB0C8\uC2B5\uB2C8\uB2E4.
+        \uC678\uBD80 \uC624\uC5FC\uC73C\uB85C\uBD80\uD130 \uC644\uC804\uD788 \uC548\uC804\uD558\uC9C0\uB294
+        \uC54A\uC9C0\uB9CC \uBCBD\uC73C\uB85C \uAD6C\uBD84\uB418\uB294 \uD654\uC7A5\uC2E4\uACFC
+        \uB531\uB531\uD55C \uC9C0\uBD95\uC774 \uC788\uB2E4\uB294 \uAC83\uB9CC\uC73C\uB85C
+        \uB9CE\uC740 \uC774\uB4E4\uC774 \uC548\uB3C4\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC77C\uB2E8\uC740\uC694. \uC8FC\uAC70 \uAD6C\uC5ED\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4.
+        \uBC29\uC7AC \uC218\uCE58\uAC00 \uB0AE\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 2
+      Allow_Disaster: -15
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 18
+      Version: 3
+      Image: {fileID: 21300000, guid: 34f489cc16ec6fd4389511b77e63bfd8, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC8FC\uD0DD\uAC00"
+      Contents: " \uC790\uC6D0\uC5D0 \uC5EC\uC720\uAC00 \uC0DD\uAE30\uC790 \uC0AC\uB78C\uB4E4\uC740
+        \uC774\uAD6C\uB3D9\uC131\uC73C\uB85C \uBC88\uB4EF\uD55C \uAC70\uC8FC\uAD6C\uC5ED\uC744
+        \uC694\uAD6C\uD588\uC2B5\uB2C8\uB2E4. \uAC89\uC73C\uB85C \uBCF4\uAE30\uC5D0
+        \uC9D1\uBCF4\uB2E4\uB294 \uCD08\uC18C\uC5D0 \uAC00\uAE4C\uC6B4 \uC774 \uC8FC\uD0DD\uC740
+        \uCCA0 \uC0AC\uC6A9\uB7C9\uC744 \uB300\uD3ED \uB298\uB824 \uC678\uBD80\uB97C
+        \uACAC\uACE0\uD558\uAC8C \uC9C0\uC740 \uC548\uC804\uD55C \uAC74\uBB3C\uC785\uB2C8\uB2E4.
+        \uADF8\uB9AC\uACE0 \uC774\uB807\uAC8C \uACAC\uACE0\uD55C \uC8FC\uD0DD\uB4E4\uC774
+        \uC639\uAE30\uC885\uAE30 \uBAA8\uC5EC \uC791\uC740 \uB3C4\uC2EC\uC9C0\uB97C
+        \uB9CC\uB4E4\uC5C8\uC2B5\uB2C8\uB2E4. \uB113\uC740 \uC8FC\uAC70 \uAD6C\uC5ED\uC744
+        \uC81C\uACF5\uD569\uB2C8\uB2E4. \uBC29\uC7AC \uC218\uCE58\uAC00 \uB192\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 3
+      Anti_Disaster: 4
+      Allow_Disaster: -15
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 18
+      Version: 4
+      Image: {fileID: 21300000, guid: 34f489cc16ec6fd4389511b77e63bfd8, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC548\uC804\uAC00\uC625"
+      Contents: " \uC2EC\uD574\uC9C0\uB294 \uC678\uBD80 \uC624\uC5FC\uC5D0 \uB3C4\uC2DC\uAC00
+        \uD56D\uC0C1 \uC548\uC804\uD560 \uC218\uB294 \uC5C6\uC2B5\uB2C8\uB2E4. \uC608\uAE30\uCE58
+        \uBABB\uD55C \uC0C1\uD669\uC5D0 \uB3C4\uC2DC\uAC00 \uB9C8\uBE44\uB418\uC5B4\uB3C4
+        \uAC70\uC8FC\uC9C0\uB9CC\uD07C\uC740 \uCD5C\uD6C4\uC758 \uBCF4\uB8E8\uAC00
+        \uB418\uC5B4 \uC0AC\uB78C\uB4E4\uC744 \uC9C0\uCF1C\uC57C\uD569\uB2C8\uB2E4.
+        \uC548\uC804\uAC00\uC625\uC740 \uAD6C\uC870\uC801\uC73C\uB85C\uB294 \uC8FC\uD0DD\uACFC
+        \uD06C\uAC8C \uB2E4\uB974\uC9C0 \uC54A\uC9C0\uB9CC \uC678\uBD80\uB97C \uACE8\uB514\uC628
+        \uCF54\uD305\uD55C \uD569\uAE08\uC73C\uB85C \uBCF4\uAC15\uD558\uACE0 \uC9C0\uD558
+        \uB300\uD53C\uC18C\uC640 \uC18C\uD615 \uACE8\uB514\uC628 \uBD84\uC0AC\uAE30\uB97C
+        \uAD6C\uBE44\uD574 \uB193\uC544 \uB354\uC6B1 \uC548\uC804\uD569\uB2C8\uB2E4.
+        \uC778\uBA85\uC744 \uD3EC\uAE30\uD560 \uC218\uB294 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uB354 \uC774\uC0C1\uC740 \uB9D0\uC785\uB2C8\uB2E4. \uB113\uC740 \uC8FC\uAC70
+        \uAD6C\uC5ED\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4. \uBC29\uC7AC \uC218\uCE58\uAC00
+        \uAC00\uC7A5 \uB192\uC2B5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 6
+      Anti_Disaster: 1
+      Allow_Disaster: -15
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 1
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 19
+      Version: 1
+      Image: {fileID: 21300000, guid: 83b3a3691f6ee7d49a97201e0486816e, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uAD11\uC7A5"
+      Contents: " \uBCF8\uC0AC \uBC29\uCE68\uC5D0\uB294 \uAC1C\uCC99\uC9C0\uC758
+        \uADDC\uBAA8\uAC00 \uCEE4\uC9C4\uB2E4\uBA74 \uAC00\uC7A5 \uBA3C\uC800 \uB113\uC740
+        \uACF5\uD130, \uC989 \uAD11\uC7A5\uC744 \uB9CC\uB4E0 \uB4A4 \uBAA9\uC695\uD0D5\uACFC
+        \uD734\uAC8C\uC2DC\uC124\uC744 \uC9C0\uC744 \uAC83\uC744 \uAD8C\uC7A5\uD558\uACE0
+        \uC788\uC2B5\uB2C8\uB2E4. \uAD11\uC7A5\uC740 \uC0AC\uB78C\uB4E4 \uAC04\uC758
+        \uAD50\uB958\uB97C \uD65C\uC131\uD654\uD558\uACE0 \uC0AC\uB78C\uB4E4\uC744
+        \uC9D1\uD569\uC2DC\uD0A4\uAE30 \uD3B8\uB9AC\uD55C \uC7A5\uC18C\uC774\uAE30
+        \uB54C\uBB38\uC785\uB2C8\uB2E4. \uC0AC\uB78C\uB4E4\uC740 \uC0BC\uC0BC\uC624\uC624
+        \uBAA8\uC5EC \uADF8 \uC790\uB9AC\uC5D0 \uC5C6\uB294 \uC0AC\uB78C\uC758 \uC774\uC57C\uAE30\uB97C
+        \uD558\uB294 \uAC83\uC744 \uC88B\uC544\uD558\uAE30\uC5D0 \uAD11\uC7A5\uC740
+        \uC5B8\uC81C\uB098 (\uADF8 \uC790\uB9AC\uC5D0 \uC5C6\uB294) \uBAA8\uB4E0
+        \uC0AC\uB78C\uB4E4\uC758 \uBD88\uB9CC\uC744 \uD574\uC18C\uD558\uB294\uB370
+        \uB3C4\uC6C0\uC744 \uC90D\uB2C8\uB2E4. \uB610\uD55C \uC704\uC0DD\uACFC \uC5EC\uAC00\uD65C\uB3D9\uB3C4
+        \uD574\uACB0\uD560 \uC218 \uC788\uC73C\uB2C8 \uC77C\uC11D\uC0BC\uC870\uC785\uB2C8\uB2E4.
+        \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uBD88\uB9CC\uC774 \uB0AE\uC544\uC9C0\uACE0 \uD76C\uB9DD\uC774 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 0
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 19
+      Version: 2
+      Image: {fileID: 21300000, guid: 83b3a3691f6ee7d49a97201e0486816e, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC8FC\uC810"
+      Contents: " \uC791\uC5C5\uC774 \uB05D\uB09C \uB2A6\uC740 \uBC24 \uC0AC\uB78C\uB4E4\uC740
+        \uC9C0\uCE5C \uBAB8\uC744 \uB04C\uACE0 \uD615\uD3B8\uC5C6\uB294 \uC548\uC8FC\uC640
+        \uBAA9 \uB118\uAE40\uC774 \uB054\uCC0D\uD55C \uC220 \uD55C \uC794\uC758 \uC704\uB85C\uB97C
+        \uBC1B\uAE30 \uC704\uD574 \uC8FC\uC810\uC73C\uB85C \uC635\uB2C8\uB2E4. \uAC19\uC740
+        \uCC98\uC9C0\uC758 \uB3D9\uB8CC\uB4E4\uB07C\uB9AC \uC138\uC0C1\uC774 \uBCC0\uD558\uAE30
+        \uC804\uC758 \uC774\uC57C\uAE30\uB97C \uD558\uAC70\uB098 \uC2DC\uC2DC\uAEC4\uB801\uD55C
+        \uB18D\uB2F4\uB3C4 \uD558\uACE0 \uC624\uB298\uB3C4 \uC0B4\uC544\uC11C \uC774\uACF3\uC5D0
+        \uC628 \uAC83\uC744 \uC11C\uB85C \uCD95\uD558\uD574\uC8FC\uB294 \uB4F1 \uC6C3\uACE0
+        \uB5A0\uB4E4 \uAC70\uB9AC\uB97C \uCC3E\uC2B5\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0
+        \uD558\uB098\uB9CC \uC9C0\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uBD88\uB9CC\uC774
+        \uB0AE\uC544\uC9C0\uACE0 \uC758\uC9C0\uAC00 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 2
+      Allow_Disaster: -5
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 19
+      Version: 3
+      Image: {fileID: 21300000, guid: 83b3a3691f6ee7d49a97201e0486816e, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uB2E4\uC774\uC2A4 \uD640"
+      Contents: " \uD0DC\uC591\uC774 \uBE44\uCD94\uC9C0 \uC54A\uC544\uB3C4 \uB728\uAC70\uC6B4
+        \uAC83\uC744 3\uAC00\uC9C0\uB97C \uCC3E\uC544\uBCF4\uC790\uBA74 \uBCBC\uB77D
+        \uB9DE\uC740 \uBC1C\uD654\uC11D\uACFC \uB9DD\uAC00\uC9C4 \uC99D\uAE30 \uB3D4\uC5D0\uC11C
+        \uC0C8\uC5B4\uB098\uC624\uB294 \uC99D\uAE30, \uADF8\uB9AC\uACE0 \uAE4A\uC740
+        \uBC24\uC5D0 \uC7A0\uAE34 \uB2E4\uC774\uC2A4 \uD640\uC77C \uAC83\uC785\uB2C8\uB2E4.
+        \uB0AE\uC5D0\uB294 \uC77C\uBC18\uC801\uC778 \uD734\uC2DD\uC758 \uC7A5\uC18C\uB85C
+        \uC4F0\uC774\uB294 \uC774\uACF3\uC740 \uB9E4\uC77C \uBC24 \uC0C1\uD488\uC73C\uB85C
+        \uC57D\uAC04\uC758 \uBA39\uC744\uAC70\uB9AC(\uC8FC\uB85C \uACE0\uAE30)\uB97C
+        \uAC74 \uC8FC\uC0AC\uC704 \uB300\uD68C\uAC00 \uC5F4\uB9AC\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC5B4\uB9B0\uC774\uC6A9 \uC8FC\uC0AC\uC704 \uAC8C\uC784\uB3C4 \uC9C0\uC6D0\uD558\uACE0
+        \uC788\uC5B4 \uB0A8\uB140\uB178\uC18C \uB204\uAD6C\uB098 \uC774\uC6A9\uD560
+        \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB3C4\uC2DC\uC5D0 \uD558\uB098\uB9CC \uC9C0\uC744
+        \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uBD88\uB9CC\uC774 \uB0AE\uC544\uC9C0\uACE0
+        \uD76C\uB9DD\uACFC \uC758\uC9C0\uAC00 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 4
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 20
+      Version: 1
+      Image: {fileID: 21300000, guid: fdb37c0e7ec5dd1499399183787a413a, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uBCF4\uAC74\uC18C"
+      Contents: " \uC784\uC2DC \uAC70\uC8FC\uC9C0\uBCF4\uB2E4\uB294 \uC880 \uC2E0\uACBD
+        \uC368\uC11C \uC9C0\uC740 \uCC9C\uB9C9\uC5D0 \uAC04\uB2E8\uD55C \uC57D\uCD08\uC640
+        \uC808\uB2E8 \uB3C4\uAD6C\uAC00 \uBC30\uCE58\uB41C \uC758\uB8CC\uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uAE30\uBC18\uC744 \uB2E4\uC9C0\uACE0 \uC788\uB294 \uC0C1\uD669\uC5D0 \uAE09\uD55C
+        \uC758\uB8CC\uC9C0\uC6D0\uC744 \uBAA9\uC801\uC73C\uB85C \uC6B4\uC601\uB418\uACE0
+        \uC788\uC73C\uBA70 \uC218\uC220\uC774 \uD544\uC694\uD560 \uACBD\uC6B0 \uD658\uC790\uB294
+        \uB9C8\uCDE8\uC7AC\uB85C \uB3C5\uD55C \uC220\uACFC \uACE0\uBB34\uB9DD\uCE58
+        \uC911 \uD558\uB098\uB97C \uD0DD\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC77C\uBD80\uB294
+        \uC220\uC744 \uD0DD\uD558\uC9C0\uB9CC \uB300\uBD80\uBD84\uC740 \uC774 \uC220\uC758
+        \uC545\uB784\uD55C \uC219\uCDE8\uB97C \uAC10\uB2F9\uD560 \uC790\uC2E0\uC774
+        \uC5C6\uC5B4 \uB9DD\uCE58\uB85C \uAE30\uC808\uC2DC\uD0A4\uB294 \uCABD\uC744
+        \uD0DD\uD569\uB2C8\uB2E4. \uB9E4 \uD134 \uC9C8\uBCD1 \uC218\uCE58\uB97C \uC57D\uAC04
+        \uB0AE\uCDA5\uB2C8\uB2E4."
+      ShortContents: " \uAE30\uCD08\uC801\uC778 \uC758\uB8CC \uC2DC\uC124\uC785\uB2C8\uB2E4.
+        \uD14C\uD06C \uB370\uBAA8\uC5D0\uC11C\uB294 \uAC00\uB3D9\uB418\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4."
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 1
+      Workable_Ontile: 0
+      Production_Type: 19
+      Production_Value: 8
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 08000000
+      BuildCost_Value:
+      - 20
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 1
+      Anti_Disaster: 2
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 20
+      Version: 2
+      Image: {fileID: 21300000, guid: cd8a37ebb91b86b4592056b711cff478, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uC758\uB8CC\uC6D0"
+      Contents: " \uC870\uB9BD\uC2DD \uC219\uC18C\uB97C \uAC1C\uC870\uD558\uC5EC
+        \uB9CC\uB4E0 \uC774 \uBCD1\uB3D9\uC740 \uBB34\uB824 \uC758\uB8CC\uC6A9 \uCE68\uB300\uAC00
+        \uAD6C\uBE44\uB418\uC5B4 \uC788\uC2B5\uB2C8\uB2E4. \uBAA8\uD3EC\uB97C \uAE30\uC6CC
+        \uB9CC\uB4E0 \uCE68\uB0AD\uC774 \uC544\uB2CC \uC81C\uB300\uB85C \uB41C \uCE68\uB300\uC785\uB2C8\uB2E4.
+        \uC57D\uCD08\uC640 \uB2E8\uC21C\uD55C \uB3C4\uAD6C\uC5D0 \uC758\uC874\uD558\uB294
+        \uCE58\uB8CC\uB294 \uC5EC\uC804\uD558\uC9C0\uB9CC \uADF8\uB798\uB3C4 \uD734\uC2DD\uC744
+        \uCDE8\uD560 \uC218 \uC788\uB294 \uBCD1\uC2E4\uC774 \uC788\uB2E4\uB294 \uAC83\uC740
+        \uD658\uC790\uB4E4\uC758 \uD68C\uBCF5\uC5D0 \uD070 \uB3C4\uC6C0\uC774 \uB418\uAE30
+        \uB9C8\uB828\uC785\uB2C8\uB2E4. \uB9E4 \uD134 \uC9C8\uBCD1 \uC218\uCE58\uB97C
+        \uB0AE\uCDA5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 35
+      Production_Value: 12
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 2
+      Anti_Disaster: 4
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 20
+      Version: 3
+      Image: {fileID: 21300000, guid: cd8a37ebb91b86b4592056b711cff478, type: 3}
+      Construction_Image: {fileID: 21300000, guid: 2ca59bf51e55d3043b75d4f76ae2267d,
+        type: 3}
+      Name: "\uBCD1\uC6D0"
+      Contents: " \uB3C4\uC2DC\uC758 \uC0C1\uD669\uC774 \uC88B\uC544\uC9C4 \uB355\uBD84\uC5D0
+        \uB4DC\uB514\uC5B4 \uC758\uB8CC\uC9C0\uC6D0\uC5D0\uB3C4 \uAD00\uC2EC\uC744
+        \uAC00\uC9C8 \uC218 \uC788\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uB85C\uC774\uB4DC
+        \uAE30\uC220\uC744 \uC811\uBAA9\uD55C \uC790\uB3D9 \uC9C4\uB2E8\uAE30\uAE30\uAC00
+        \uBC30\uCE58\uB41C \uBCD1\uC6D0\uC740 \uC758\uB8CC\uC6D0\uC5D0 \uBE44\uD574
+        \uC218\uC6A9\uD560 \uC218 \uC788\uB294 \uD658\uC790\uC758 \uC218\uB294 \uC801\uC9C0\uB9CC
+        \uCE58\uB8CC \uC18D\uB3C4 \uC790\uCCB4\uAC00 \uBE68\uB77C \uACB0\uACFC\uC801\uC73C\uB85C
+        \uB354 \uB9CE\uC740 \uD658\uC790\uB97C \uCC98\uB9AC\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC774\uC81C\uC57C \uB3C5\uD55C \uC220\uC758 \uC219\uCDE8\uC5D0 \uC775\uC219\uD574\uC9C4
+        \uC0AC\uB78C\uB4E4\uC774 \uAC11\uC791\uC2A4\uB7F0 \uC57D\uBB3C \uB9C8\uCDE8
+        \uC2DC\uC220\uC5D0 \uAE08\uB2E8 \uC99D\uC138\uB97C \uBCF4\uC774\uAE34 \uD558\uC9C0\uB9CC
+        \uC774 \uB610\uD55C \uCE58\uB8CC\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB9E4
+        \uD134 \uC9C8\uBCD1 \uC218\uCE58\uB97C \uD06C\uAC8C \uB0AE\uCDA5\uB2C8\uB2E4."
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 2
+      Workable_Ontile: 0
+      Production_Type: 35
+      Production_Value: 20
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 4
+      Anti_Disaster: 6
+      Allow_Disaster: -6
+      Buff_Area_Size: 0
+      Addon_Slot: 1
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  - BD_Version:
+    - Type: 21
+      Version: 1
+      Image: {fileID: 21300000, guid: 3757301c9fd2fca438d077ac42a78617, type: 3}
+      Construction_Image: {fileID: 0}
+      Name: "\uACE0\uBB3C \uC2A4\uD2F8\uC6E8\uC77C"
+      Contents: " \uB3C4\uC2DC \uAC74\uC124\uC744 \uC704\uD574 \uCC9C\uCC9C\uD788
+        \uBD84\uD574\uD558\uB358 \uC2A4\uD2F8 \uC6E8\uC77C\uC785\uB2C8\uB2E4. \uAE09\uD558\uAC8C
+        \uB3C4\uB9DD\uCCD0\uC624\uB290\uB77C \uC911\uC694\uD55C \uBD80\uC18D\uD488\uC744
+        \uB2E4\uC218 \uC7A5\uCC29\uD558\uC9C0 \uBABB\uD55C \uCC44 \uB2EC\uB824\uC628
+        \uD130\uB77C \uC0C1\uD0DC\uAC00 \uB9E4\uC6B0 \uB054\uCC0D\uD569\uB2C8\uB2E4.
+        \uC720\uC77C\uD558\uAC8C \uBA40\uCA61\uD55C \uAC83\uC740 \uC5D4\uC9C4\uD558\uACE0
+        \uC9C0\uBD80\uC7A5\uC2E4 \uBFD0\uC73C\uB85C \uC7AC\uAC00\uB3D9\uD558\uAE30
+        \uC704\uD574\uC120 \uB9CE\uC740 \uC815\uBE44\uAC00 \uD544\uC694\uD574\uBCF4\uC785\uB2C8\uB2E4.
+        \uC0C1\uD669\uC774 \uC5EC\uC720\uB85C\uC6E0\uB2E4\uBA74 \uCC9C\uCC9C\uD788
+        \uC2DC\uAC04\uC744 \uB4E4\uC5EC \uC7AC\uC870\uB9BD\uD588\uACA0\uC9C0\uB9CC
+        \uC9C0\uAE08\uC740 \uADF8\uB7F4 \uC2DC\uAC04\uB3C4 \uC790\uC6D0\uB3C4 \uC5C6\uC73C\uB2C8
+        \uC815\uB9D0 \uD544\uC694\uD55C \uBD80\uC704\uB4E4\uBD80\uD130 \uC791\uC5C5\uD574\uC57C\uACA0\uC2B5\uB2C8\uB2E4.
+        \uC218\uB9AC \uBC0F \uAC1C\uC870\uB97C \uC704\uD574\uC120 \uACF5\uCC3D\uC774
+        \uD544\uC694\uD558\uACE0 \uC774\uB3D9 \uC900\uBE44\uB97C \uC704\uD574\uC120
+        \uD558\uC5ED\uC7A5\uC774 \uD544\uC694\uD569\uB2C8\uB2E4. "
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: -1
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 1
+      Allow_Disaster: -15
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 21
+      Version: 2
+      Image: {fileID: 0}
+      Construction_Image: {fileID: 0}
+      Name: 
+      Contents: 
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 21
+      Version: 3
+      Image: {fileID: 0}
+      Construction_Image: {fileID: 0}
+      Name: 
+      Contents: 
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+    - Type: 0
+      Version: 0
+      Image: {fileID: 0}
+      Construction_Image: {fileID: 0}
+      Name: 
+      Contents: 
+      ShortContents: 
+      BuildingSound: {fileID: 0}
+      ConstructSound: {fileID: 0}
+      Working_ManPower: 0
+      Workable_Ontile: 0
+      Production_Type: 0
+      Production_Value: 0
+      Upkeep_Type: 
+      Upkeep_Value: []
+      BuildCost_Type: 
+      BuildCost_Value: []
+      Buff_Type: 
+      Buff_Value: []
+      Build_TurnCount: 0
+      Anti_Disaster: 0
+      Allow_Disaster: 0
+      Buff_Area_Size: 0
+      Addon_Slot: 0
+      limitNumber: 0
+      Need_Steam: 0
+      Need_Electricity: 0
+      Need_House: 0
+      Need_Public: 0
+      Need_Idea: 0
+      Constructable: 0
+  Ub:
+  - Unlock_Version: 01000000
+  - Unlock_Version: 00000000
+  - Unlock_Version: 0000
+  - Unlock_Version: 00000000
+  - Unlock_Version: 01000000
+  - Unlock_Version: 01000000
+  - Unlock_Version: 010000
+  - Unlock_Version: 0000
+  - Unlock_Version: 01000000
+  - Unlock_Version: 00000000
+  - Unlock_Version: 00000000
+  - Unlock_Version: 010000
+  - Unlock_Version: 0100
+  - Unlock_Version: 000000
+  - Unlock_Version: 01010000
+  - Unlock_Version: 01010000
+  - Unlock_Version: 00000000
+  - Unlock_Version: 01000000
+  - Unlock_Version: 000000
+  - Unlock_Version: 010000
+  - Unlock_Version: 00000000
+  Uswb: []
+  AO:
+  - AO_Version:
+    - Type: 1
+      Version: 0
+      Name: " \uC18C\uD615 \uBCF5\uD569 \uC791\uC5C5\uB300"
+      Contents: " \uB85C\uC774\uB4DC \uBCF8\uC0AC\uC5D0\uC11C \uC790\uB791\uD558\uB294
+        \uB2E4\uBAA9\uC801 \uAE30\uC220\uC758 \uB300\uD45C\uC801\uC778 \uAE30\uACC4\uC785\uB2C8\uB2E4.
+        \uAC70\uC758 \uBAA8\uB4E0 \uC885\uB958\uC758 \uC790\uC6D0\uC744 \uAC00\uACF5
+        \uD560 \uC218 \uC788\uC5B4 \uC791\uC5C5\uC758 \uD6A8\uC728\uC744 \uB192\uC785\uB2C8\uB2E4.
+        \uAC74\uBB3C\uC758 \uC0DD\uC0B0\uB7C9\uACFC \uC720\uC9C0\uBE44\uAC00 \uC57D\uAC04
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      Buff_ProductType: 0
+      Buff_ProductValue: 0
+      Buff_ProductScale: 1.15
+      Buff_UpkeepType: 0
+      Buff_UpkeepValue: 1.15
+      BuildCost1_Type: 4
+      BuildCost1_Value: 20
+      BuildCost2_Type: 5
+      BuildCost2_Value: 15
+      BuildCost3_Type: 6
+      BuildCost3_Value: 15
+    - Type: 1
+      Version: 1
+      Name: " \uC911\uD615 \uBCF5\uD569 \uC791\uC5C5\uB300"
+      Contents: " \uB85C\uC774\uB4DC \uBCF8\uC0AC\uC5D0\uC11C \uC790\uB791\uD558\uB294
+        \uB2E4\uBAA9\uC801 \uAE30\uC220\uC758 \uB300\uD45C\uC801\uC778 \uAE30\uACC4\uC785\uB2C8\uB2E4.
+        \uAC70\uC758 \uBAA8\uB4E0 \uC885\uB958\uC758 \uC790\uC6D0\uC744 \uAC00\uACF5
+        \uD560 \uC218 \uC788\uC5B4 \uC791\uC5C5\uC758 \uD6A8\uC728\uC744 \uB192\uC785\uB2C8\uB2E4.
+        \uAC74\uBB3C\uC758 \uC0DD\uC0B0\uB7C9\uACFC \uC720\uC9C0\uBE44\uAC00 \uD06C\uAC8C
+        \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+      Buff_ProductType: 0
+      Buff_ProductValue: 0
+      Buff_ProductScale: 1.5
+      Buff_UpkeepType: 0
+      Buff_UpkeepValue: 1.5
+      BuildCost1_Type: 4
+      BuildCost1_Value: 80
+      BuildCost2_Type: 5
+      BuildCost2_Value: 40
+      BuildCost3_Type: 6
+      BuildCost3_Value: 30
+  - AO_Version:
+    - Type: 2
+      Version: 0
+      Name: " \uC790\uB3D9\uD654 \uBD80\uD488 \uC870\uB9BD\uAE30"
+      Contents: " \uBD80\uD488\uC774 \uBD80\uC871\uD558\uAC70\uB098 \uBD80\uD488
+        \uACF5\uC7A5\uC744 \uC124\uB9BD\uD560 \uACF5\uAC04\uC774 \uC5C6\uC744 \uB54C
+        \uB85C\uC774\uB4DC \uBCF8\uC0AC\uC5D0\uC120 \uC5B4\uB514\uB4E0 \uC0C1\uAD00\uC5C6\uC73C\uB2C8
+        \uBD80\uD488 \uC870\uB9BD\uAE30\uB97C \uC124\uCE58\uD558\uB77C\uACE0 \uC9C0\uC2DC\uD588\uC2B5\uB2C8\uB2E4.
+        \uBCC4\uB3C4\uC758 \uC720\uC9C0\uBE44 \uC5C6\uC774 \uCCA0\uC744 \uAE4E\uC544
+        \uBD80\uD488\uC744 \uB9CC\uB4E4\uC5B4\uB0C5\uB2C8\uB2E4. \uCCA0\uC744 \uC18C\uBAA8\uD558\uC5EC
+        \uBD80\uD488\uC744 \uB9CC\uB4E4\uC5B4\uB0C5\uB2C8\uB2E4."
+      Buff_ProductType: 6
+      Buff_ProductValue: 10
+      Buff_ProductScale: 0
+      Buff_UpkeepType: 5
+      Buff_UpkeepValue: 30
+      BuildCost1_Type: 4
+      BuildCost1_Value: 22
+      BuildCost2_Type: 5
+      BuildCost2_Value: 22
+      BuildCost3_Type: 0
+      BuildCost3_Value: 0
+    - Type: 2
+      Version: 1
+      Name: " \uC790\uB3D9\uD654 \uC870\uB9AC\uAE30\uAD6C"
+      Contents: " \uC2DD\uC0AC\uAC00 \uBD80\uC871\uD558\uAC70\uB098 \uC2DD\uB2F9\uC744
+        \uC9C0\uC744 \uACF5\uAC04\uC774 \uBD80\uC871\uD55C \uAC1C\uCC99\uC9C0\uC5D0\uC11C\uB294
+        \uD754\uD788\uB4E4 \uC774 \uAE30\uACC4\uB97C \uC0AC\uC6A9\uD588\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uBCC4\uB3C4\uC758 \uC720\uC9C0\uBE44 \uC5C6\uC774 \uC2DD\uC790\uC7AC\uB97C
+        \uAC00\uACF5\uD574 \uC2DD\uC0AC\uB97C \uB9CC\uB4E4\uC5B4\uB0C5\uB2C8\uB2E4.
+        \uC2DD\uC790\uC7AC\uB97C \uC18C\uBAA8\uD574 \uC2DD\uC0AC\uB97C \uB9CC\uB4E4\uC5B4\uB0C5\uB2C8\uB2E4."
+      Buff_ProductType: 2
+      Buff_ProductValue: 10
+      Buff_ProductScale: 0
+      Buff_UpkeepType: 1
+      Buff_UpkeepValue: 15
+      BuildCost1_Type: 4
+      BuildCost1_Value: 22
+      BuildCost2_Type: 5
+      BuildCost2_Value: 22
+      BuildCost3_Type: 0
+      BuildCost3_Value: 0
+  - AO_Version:
+    - Type: 3
+      Version: 0
+      Name: " \uC5B4\uC124\uD508 \uACA9\uB9AC \uC678\uBCBD"
+      Contents: " \uC678\uBD80 \uC624\uC5FC\uC774 \uACE8\uB514\uB77D\uC2A4 \uC874\uC5D0
+        \uB118\uC5B4\uC624\uB294 \uACBD\uC6B0\uC5D0 \uB300\uBE44\uD574 \uAC74\uBB3C\uC5D0
+        \uAC04\uB2E8\uD55C \uC678\uBCBD\uC744 \uB450\uB985\uB2C8\uB2E4. \uBC29\uC7AC
+        \uC218\uCE58\uB97C \uC57D\uAC04 \uC62C\uB9BD\uB2C8\uB2E4."
+      Buff_ProductType: 19
+      Buff_ProductValue: 1
+      Buff_ProductScale: 0
+      Buff_UpkeepType: 0
+      Buff_UpkeepValue: 0
+      BuildCost1_Type: 4
+      BuildCost1_Value: 30
+      BuildCost2_Type: 0
+      BuildCost2_Value: 0
+      BuildCost3_Type: 0
+      BuildCost3_Value: 0
+    - Type: 3
+      Version: 1
+      Name: " \uACA9\uB9AC \uC678\uBCBD"
+      Contents: " \uC678\uBD80 \uC624\uC5FC\uC774 \uACE8\uB514\uB77D\uC2A4 \uC874\uC5D0
+        \uB118\uC5B4\uC624\uB294 \uACBD\uC6B0\uC5D0 \uB300\uBE44\uD574 \uAC74\uBB3C\uC5D0
+        \uBCF4\uAC15\uD55C \uC678\uBCBD\uC744 \uB450\uB985\uB2C8\uB2E4. \uBC29\uC7AC
+        \uC218\uCE58\uB97C \uC62C\uB9BD\uB2C8\uB2E4."
+      Buff_ProductType: 19
+      Buff_ProductValue: 2
+      Buff_ProductScale: 0
+      Buff_UpkeepType: 0
+      Buff_UpkeepValue: 0
+      BuildCost1_Type: 4
+      BuildCost1_Value: 30
+      BuildCost2_Type: 5
+      BuildCost2_Value: 25
+      BuildCost3_Type: 0
+      BuildCost3_Value: 0
+    - Type: 3
+      Version: 2
+      Name: " \uAC1C\uB7C9\uB41C \uACA9\uB9AC \uC678\uBCBD"
+      Contents: " \uC678\uBD80 \uC624\uC5FC\uC774 \uACE8\uB514\uB77D\uC2A4 \uC874\uC5D0
+        \uB118\uC5B4\uC624\uB294 \uACBD\uC6B0\uC5D0 \uB300\uBE44\uD574 \uAC74\uBB3C\uC5D0
+        \uD2BC\uD2BC\uD55C \uC678\uBCBD\uC744 \uB450\uB985\uB2C8\uB2E4. "
+      Buff_ProductType: 19
+      Buff_ProductValue: 3
+      Buff_ProductScale: 0
+      Buff_UpkeepType: 0
+      Buff_UpkeepValue: 0
+      BuildCost1_Type: 4
+      BuildCost1_Value: 30
+      BuildCost2_Type: 5
+      BuildCost2_Value: 25
+      BuildCost3_Type: 7
+      BuildCost3_Value: 15
+  - AO_Version: []
+  - AO_Version: []
+  - AO_Version: []
+  - AO_Version: []
+  - AO_Version: []
